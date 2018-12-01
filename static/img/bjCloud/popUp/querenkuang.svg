@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="606px" height="340px" viewBox="0 0 606 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>querenkuang</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="606" height="340"></rect>
+    </defs>
+    <g id="消防报警视频弹窗" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-667.000000, -594.000000)">
+        <g id="Group-18" transform="translate(619.000000, 101.000000)">
+            <g id="querenkuang" transform="translate(48.000000, 493.000000)">
+                <g id="xiaodikuang">
+                    <use fill-opacity="0.75" fill="#014465" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke-opacity="0.5" stroke="#00C0A5" stroke-width="1" x="0.5" y="0.5" width="605" height="339"></rect>
+                </g>
+                <polygon id="xiaokuangyouxiajiao-" fill="#079795" points="606 326 606 340 592 340"></polygon>
+                <polygon id="xiaokuangyoushangjiao" fill="#079795" transform="translate(7.000000, 7.000000) scale(-1, -1) translate(-7.000000, -7.000000) " points="14 0 14 14 0 14"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

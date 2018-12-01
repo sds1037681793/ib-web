@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+.bx-prev {
+    left: 10px;
+    background-image: url(../img/base/leftArrow.svg);
+    opacity: 0.5;
+    width: 16px;
+    height: 30px;
+
+}
+.bx-next {
+    right: 10px;
+    background-image: url(../img/base/rightArrow.svg);
+    opacity: 0.5;
+    width: 16px;
+    height: 30px;
+}
+.slideCheckStyle{
+    border: 2px solid #51A5E7 !important;
+}
+.weightStyle{
+    font-weight: bold;
+    color: #ffffff !important;
+}
+ .illicitApprovaliImage{
+     background-image: url(../img/base/occupySmall.svg);
+     width: 40px;
+     height: 40px;
+     position: absolute;
+ }
+.illicitApprovaliImageBig{
+    background-image: url(../img/base/occupyBig.svg);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    margin-left:30px;
+    margin-top:20px;
+}
+.strangerSmallImage{
+    background-image: url(../img/base/strangerSmall.svg);
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    z-index: 2;
+}
+.strangerBigImage{
+    background-image: url(../img/base/strangerBig.svg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:262px;
+    z-index: 2;
+}
+.strangerBorder{
+	border: 6px solid #F96363;
+}
+.strangerSmallTwoImage{
+    background-image: url(../img/base/strangerSmallTwo.svg);
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    z-index: 2;
+}
+.vipSmallImage{
+    background-image: url(../img/base/vipSmallTwo2.svg);
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    z-index: 2;
+    background-size: 100%;
+}
+.vipBigImage{
+    background-image: url(../img/base/vipSmallTwo2.svg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 262px;
+    z-index: 2;
+    background-size: 100%;
+}
+.vipSmallTwoImage{
+    background-image: url(../img/base/vipSmallTwo2.svg);
+	width: 38px;
+    height: 38px;
+    position: absolute;
+    z-index: 2;
+    background-size: 100%;
+}
+
+.blacklistSmallImage{
+    background-image: url(../img/base/blacklistSmallImage.svg);
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    z-index: 2;
+}
+.focusPersonSmallImage{
+    background-image: url(../img/base/focusPersonSmallImage.svg);
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    z-index: 2;
+}
+
+.blacklistBigImage {
+    background-image: url(../img/base/blacklistSmallImage.svg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 262px;
+    z-index: 2;
+    background-size: 100%;
+}
+
+.focusPersonBigImage {
+    background-image: url(../img/base/focusPersonSmallImage.svg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 262px;
+    z-index: 2;
+    background-size: 100%;
+}

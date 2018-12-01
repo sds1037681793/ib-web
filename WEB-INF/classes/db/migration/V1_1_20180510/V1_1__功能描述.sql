@@ -1,0 +1,4 @@
+-- 功能说明：sql demo
+-- 提交人：longsh
+-- INSERT INTO demo(`name`) VALUES ('1');
+-- INSERT INTO demo(`name`) VALUES ('2');

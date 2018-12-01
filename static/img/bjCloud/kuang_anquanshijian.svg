@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="452px" height="282px" viewBox="0 0 452 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>kuang anquanshijian</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M351.251883,0 L338.204021,5.07697052 L113.655116,5.07697052 L99.2513617,0 L3.08219178,0 C1.37994426,3.12697796e-16 -3.31708967e-15,1.37994426 -3.10862447e-15,3.08219178 L0,276.917808 C2.08465197e-16,278.620056 1.37994426,280 3.08219178,280 L446.917808,280 C448.620056,280 450,278.620056 450,276.917808 L450,3.08219178 C450,1.37994426 448.620056,-2.97723305e-15 446.917808,-2.66453526e-15 L351.251883,0 Z" id="path-1"></path>
+        <filter x="-0.4%" y="-0.7%" width="100.8%" height="101.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="1" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0844689938   0 0 0 0 0.178911208   0 0 0 0 0.313828656  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="滨江小区智慧云平台／设备重要报警" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-19.000000, -489.000000)">
+        <g id="Group-Copy-6" transform="translate(20.000000, 490.000000)">
+            <g id="kuang-anquanshijian">
+                <g id="Fill-1">
+                    <use fill-opacity="0.8" fill="#07212D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#00BFA5" stroke-width="0.770547945" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="Fill-2" fill="#00BFA5" points="166.438356 5.40114972 282.791096 5.40114972 282.791096 3.08825397 166.438356 3.08825397"></polygon>
+                <path d="M129.452055,4.63018447 L161.044521,4.63018447" id="Stroke-3" stroke="#00BFA5" stroke-width="0.770547945"></path>
+                <path d="M288.184932,4.63018447 L319.777397,4.63018447" id="Stroke-4" stroke="#00BFA5" stroke-width="0.770547945"></path>
+            </g>
+        </g>
+    </g>
+</svg>

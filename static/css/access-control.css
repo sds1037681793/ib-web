@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+/* .main_background {
+	background-image: url("../static/img/access-control/background00.png");
+} */
+
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{overflow:hidden;font:12px/180% Arial, Helvetica, sans-serif ,"新宋体";}
+/* shortcut */
+.shortcut{position:fixed;top:0;left:0;z-index:9999;width:100%;}
+*html,*html body /* 修正IE6振动bug */{background-image:url(about:blank);background-attachment:fixed;}
+*html .shortcut{position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+.shortcut{height:28px;background:#EEEEEE;box-shadow:1px 0px 2px rgba(0,0,0,0.2);border-bottom:1px solid #DDDDDD;padding:40px 0 0 0;}
+.shortcut li{float:left;cursor:pointer;margin:5px 0 0 15px;display:inline;}
+/* #picbbox */
+.down_showpic{overflow:hidden;width:auto;text-align:center;}
+.pictio{position:absolute;z-index:1;background-color:#666;cursor:move;}
+.popover_text:hover {cursor:pointer;}
+.mmg-head{background-color:#3BBCE6}
+.mmg-title{color:#FFFFFF}
+.mmg-title{color:#FFFFFF}
+.nowrap{color:#333333}

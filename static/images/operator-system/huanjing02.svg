@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>huanjing02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M237.000198,93.7262489 C237.000198,95.7574967 237.389609,97.6871821 238.16843,99.5153051 C238.947252,101.343428 239.997057,102.917645 241.317845,104.237956 C242.638634,105.558267 244.196408,106.607745 245.99117,107.38639 C247.785932,108.165035 249.699253,108.554358 251.731133,108.554358 C253.763013,108.554358 255.6933,108.165068 257.521992,107.386489 C259.350685,106.607911 260.925392,105.558433 262.246114,104.238055 C263.566836,102.917678 264.616641,101.343461 265.395529,99.5154043 C266.174416,97.6873474 266.563827,95.757662 266.563761,93.7263481 C266.563695,91.6950342 266.174251,89.7823089 265.39543,87.9881723 C264.616608,86.1940356 263.566803,84.6367457 262.246015,83.3163024 C260.925227,81.9958591 259.350519,80.946381 257.521893,80.1678683 C255.693267,79.3893556 253.76298,79.0000661 251.731034,79 C249.699087,78.9999339 247.785766,79.3892564 245.991071,80.1679675 C244.196375,80.9466786 242.6386,81.9961566 241.317746,83.3164015 C239.996891,84.6366465 238.947086,86.1939365 238.168331,87.9882715 C237.389576,89.7826065 237.000132,91.6953317 237,93.7264473 L237.000198,93.7262489 Z" id="path-1"></path>
+        <filter x="-106.5%" y="-99.8%" width="313.1%" height="313.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.00711334486   0 0 0 0 0.133316543   0 0 0 0 0.157312925  0 0 0 0.516049592 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="项目首页" transform="translate(-516.000000, -115.000000)" fill-rule="nonzero">
+            <g id="云" transform="translate(298.000000, 53.000000)">
+                <g id="huanjing02">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#56E4FF" stroke-width="1" fill-opacity="0.4" fill="#09A2DD" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

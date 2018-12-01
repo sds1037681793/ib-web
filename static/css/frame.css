@@ -1,0 +1,19 @@
+.modal-headers .closeRight {
+    background-image: url(../img/base/closeNew.svg);
+    opacity: 1;
+}
+
+.modal-header .closeRight {
+    background-image: url(../img/base/closeright.png);
+    opacity: 1;
+    margin-top:-5px !important;
+}
+
+.closeRight:focus, .closeRight:hover {
+    opacity: 0.5;
+}
+.modal-header .closeLeft {
+    background-image: url(../img/base/back.png) !important;
+    margin-left: 50px;
+    margin-top:50px !important;
+}

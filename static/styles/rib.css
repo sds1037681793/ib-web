@@ -1,0 +1,415 @@
+body {
+	background-color: transparent;
+	height: 100%;
+	font-size: 14px !important;
+}
+h4{
+	font-size: 14px !important;
+	font-weight:bold;
+	padding-left:8px;
+}
+.modal-header .close{
+	margin-top:-10px !important;
+}
+
+a, a:hover, a:focus, a:link, a:visited {
+	text-decoration: none;
+	outline: none;
+	star:expression(this.onFocus=this.blur());
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	border: 0px;
+}
+
+.label-important, .badge-important {
+	background:#f74d4d;
+}
+
+.input-group-btn {
+	display: block;
+}
+
+.nav-breadcrumb {
+	background-color: #fff;
+	border-bottom: 1px solid #e3ebed;
+}
+.nav-breadcrumb a {
+	padding: 8px 20px 8px 10px;
+	display: inline-block;
+	background-image: url('../img/breadcrumb.png');
+	background-position: center right;
+	background-repeat: no-repeat;
+	font-size: 11px;
+	color: #666666;
+}
+.nav-breadcrumb a:hover {
+	color: #333333;
+}
+.nav-breadcrumb a:last-child {
+	background-image:none;
+}
+.nav-breadcrumb a.current {
+	font-weight: bold;
+	color: #444444;
+}
+.nav-breadcrumb a i {
+	margin-right: 5px;
+	opacity: .6;
+}
+.nav-breadcrumb a:hover i {
+	margin-right: 5px;
+	opacity: .8;
+}
+
+.user-nav {
+	position: absolute;
+	left: 220px;
+	top:0px;
+	z-index: 20;
+	margin: 0;
+}
+.user-nav > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-right: 1px solid #2e363f;
+	border-left: 1px solid #222;
+}
+.user-nav > ul > li {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	position: relative;
+	padding: 0;
+	border-left: 1px solid #2e363f;
+	border-right: 1px solid #222;
+}
+.user-nav > ul > li > a {
+	padding: 9px 10px;
+	display: block;
+	font-size: 11px;
+	color: #CCC;
+}
+.user-nav > ul > li > a:hover, .user-nav > ul > li.open > a {
+	color: #ffffff;
+	background:#2E363F;
+}
+.user-nav > ul > li > a > i, #sidebar li a i {
+	opacity: .5; 
+	margin-top: 2px;
+}
+.user-nav > ul > li > a:hover > i, .user-nav > ul > li.open > a > i {
+	opacity: 1;
+}
+.user-nav > ul > li > a > .label {
+	vertical-align: middle;
+	padding: 1px 4px 1px;
+	margin: -2px 4px 0;
+	display: inline-block;
+}
+.user-nav > ul ul > li > a {
+	text-align: left;
+}
+.user-nav > ul ul > li > a:hover {
+}
+.nav .open > a {
+	background-color: #2E363F;
+}
+
+/** 自定义标签页样式 **/
+.nav-tabs {
+	padding-left: 10px;
+	height: 30px;
+}
+
+.nav-tabs > li {
+	height: 25px;
+	line-height: 25px;
+	padding-bottom: 5px;
+}
+
+.nav-tabs > li.active > a, .nav > li.active > a:hover, .nav > li.active > a:focus {
+	border-width: 3px 0px 0px 0px;
+	border-top-style: solid;
+	color: #313131;
+}
+
+.nav-tabs > li > a {
+	color: #FFF;
+	padding: 5px 15px;
+	border-radius: 0px;
+}
+
+.nav-tabs > li > a:hover {
+	border-width: 0px;
+}
+
+.tab-content {
+	background-color: #fff;
+	border: 1px solid #e1e1e1;
+	padding: 10px;
+	border-top: none;
+	margin-bottom: 10px;
+}
+
+.title-bar {
+	margin-top: 10px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	padding-left: 10px;
+}
+
+.title-bar-green {
+	background-color: #4FC2B9;
+}
+
+.title-bar-green > li.active > a, .title-bar-green > li.active > a:hover, .title-bar-green > li.active > a:focus {
+	border-top-color: #13752D;
+}
+
+.title-bar-green > li > a:focus, .title-bar-green > li > a:hover {
+	background-color: #6FD480;
+}
+
+.title-bar-blue {
+	background-color: #5BB4D8;
+}
+
+.title-bar-blue > li.active > a, .title-bar-blue > li.active > a:hover, .title-bar-blue > li.active > a:focus {
+	border-top-color: #0379b8;
+}
+
+.title-bar-blue > li > a:focus, .title-bar-blue > li > a:hover {
+	background-color: #65c7fc;
+}
+
+.title-bar-red {
+	background-color: #F47564;
+}
+
+.title-bar-red > li.active > a, .title-bar-red > li.active > a:hover, .title-bar-red > li.active > a:focus {
+	border-top-color: #9e273f;
+}
+
+.title-bar-red > li > a:focus, .title-bar-red > li > a:hover {
+	background-color: #e18698;
+}
+
+/*404、500错误样式  start*/
+.page-error-pin {
+	height: 37px;
+	width: 317px;
+	float: right;
+	background: url('../../static/images/error-pin.png') no-repeat center center;
+}
+
+.page-error-hanger {
+	margin-top: -32px;
+	height: 297px;
+	float: right;
+	width: 317px;
+	background: url('../../static/images/error-hanger.png') no-repeat center center;
+	-webkit-transform-origin: center top;
+	-moz-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-animation: page-error-swing infinite 2s ease-in-out alternate;
+	-moz-animation: page-error-swing infinite 2s ease-in-out alternate;
+	animation: page-error-swing infinite 2s ease-in-out alternate
+}
+
+.page-error-text {
+	line-height: 1;
+	text-align: center;
+	font: 32px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	color: #444;
+	padding: 120px 16px 0 16px;
+}
+
+.page-error-text span{
+	font-size: 96px;
+	display: block;
+}
+
+@-webkit-keyframes page-error-swing {
+	0% {
+		-webkit-transform: rotate(1deg)
+	}
+	100% {
+		-webkit-transform: rotate(-2deg)
+	}
+}
+
+@-moz-keyframes page-error-swing {
+	0% {
+		-moz-transform: rotate(1deg)
+	}
+	100% {
+		-moz-transform: rotate(-2deg)
+	}
+}
+
+@keyframes page-error-swing {
+	0% {
+		transform: rotate(1deg)
+	}
+	100% {
+		transform: rotate(-2deg)
+	}
+}
+/*404、500错误样式  end*/
+
+.modal-content-icon {
+	font-size: 30px;
+	padding-left: 10px;
+	float: left;
+	padding-right: 15px;
+}
+
+.content-default {
+	background-color: #fff;
+	border: 1px solid #e1e1e1;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.btn-common {
+	margin-top: 0px;
+	margin-right: 5px;
+	font-size: 12px;
+	color: #fff;
+	border-width: 0px;
+	padding: 5px 20px 5px 20px;
+}
+
+input:required {
+	background-color: #FFFFDC;
+}
+
+.btn-group .btn {
+	font-size: 12px;
+}
+
+.input-group-btn{
+	display:block;
+}
+
+.form-control {
+	margin-left: 20px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	font-size: 12px;
+	height: 26px;
+	line-height: 12px;
+}
+
+.select-form-control {
+	padding: 3px 10px;
+}
+
+.select-form-control > option {
+	padding-left: 10px;
+}
+
+.btn {
+	margin-top: 2px;
+	padding: 2px 12px;
+}
+
+input:required {
+	background-color: #FFC;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	background-color: #F2F2F2;
+}
+
+.ztree li a {
+	border: 1px solid rgb(170, 170, 170);
+	margin-left: 2px;
+	padding: 5px 5px 22px 10px;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	vertical-align: sub;
+	text-decoration: none;
+	background-color: #EEE;
+}
+
+.ztree li a:hover {
+	text-decoration: none;
+}
+
+.ztree li a.curSelectedNode {
+	border: 1px solid rgb(170, 170, 170);
+	padding: 5px 5px 22px 10px;
+	margin-left: 2px;
+}
+
+.ztree li span {
+	margin-right: 10px;
+}
+
+.dropdown-menu {
+	font-size: 12px;
+	min-width: 150px;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.popover, .popover-title {
+	font-size: 12px;
+}
+
+/** 清楚float效果 */
+.clearfix:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+
+.dividing-line {
+	border-top:1px solid #ccc;
+	height: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+button.alert-close {
+	padding: 0px;
+	cursor: pointer;
+	background: transparent none repeat scroll 0px 0px;
+	border: 0px none;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	color: #000;
+	text-shadow: 0px 1px 0px #FFF;
+	opacity: 0.2;
+	margin-right: -23px;
+}
+
+.alert-close:focus, .close:hover {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.btn-jump {
+	padding: 2px 12px;
+	display: inline-block;
+}
+
+.btn-jump:hover {
+	 cursor:pointer;
+}

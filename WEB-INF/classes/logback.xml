@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+			<!-- <pattern>%-5level %logger{36} - %msg%n</pattern> -->
+		</encoder>
+	</appender>
+
+	<appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>/tmp/logs/icop.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>/tmp/logs/icop.%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>5</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>500MB</maxFileSize>
+        </triggeringPolicy>
+		<encoder>
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- project default level -->
+    <logger name="com.rib.sec" level="DEBUG" />
+    
+    <!-- show parameters for hibernate sql 专为 Hibernate 定制 --> 
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder"  level="TRACE" />  
+    <logger name="org.hibernate.type.descriptor.sql.BasicExtractor"  level="TRACE" />  
+    <logger name="org.hibernate.SQL" level="TRACE" />  
+    <logger name="org.hibernate.engine.QueryParameters" level="TRACE" />
+    <logger name="org.hibernate.engine.query.HQLQueryPlan" level="TRACE" />  
+
+    <!--log4jdbc -->
+    <logger name="jdbc.sqltiming" level="TRACE"/>
+
+	<root level="INFO">
+		<appender-ref ref="console" />
+		<!-- <appender-ref ref="rollingFile" /> -->
+	</root>
+</configuration>

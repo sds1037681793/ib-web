@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd"
+	default-lazy-init="true">
+
+	<description>Shiro安全配置</description>
+	
+	<bean class="com.rib.sec.common.SpringContextHolder" lazy-init="false"/>
+
+	<!-- Shiro's main business-tier object for web-enabled applications -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="shiroDbRealm" />
+		<property name="cacheManager" ref="shiroEhcacheManager" />
+	</bean>
+
+	<!-- 項目自定义的Realm, secOperatorSV所有依赖的dao都需要用depends-on声明 -->
+	<bean id="shiroDbRealm" class="com.rib.sec.service.auth.ShiroDbRealm">
+		<property name="secOperatorSV" ref="secOperatorSV"/>
+	</bean>
+	
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/login" />
+		<!--<property name="successUrl" value="/projectPage" />-->
+		<property name="successUrl" value="/projectPage" />
+		<property name="filters">
+			<map>
+				<entry key="authc">
+					<bean class="com.rib.ib.web.filter.CommonFilter"/>
+				</entry>
+				<entry key="logout">
+					<bean class="com.rib.sec.common.LogoutFilter">
+						<property name="redirectUrl" value="/projectPage"/>
+					</bean>
+				</entry>
+			</map>
+		</property>
+		<property name="filterChainDefinitions">
+			<value>
+				/login = authc
+				/logout = logout
+				/static/** = anon
+				/images/** = anon
+				/api/** = anon
+				/websocket/** = anon
+				/echart/** = anon
+				/report/** = anon
+				/projectPage/groupMain = anon
+				/psdMain/** = anon
+				/fire-fighting/geomagParkingStatus/getShareParkingStatistics = anon
+				/securityIncident/** = anon
+				/doc.html = anon
+				/webjars/** = anon
+				/main = anon
+				/main/** = anon
+				/** = user
+			</value>
+		</property>
+	</bean>
+	
+	<!-- 用户授权信息Cache,  采用EhCache -->
+	<bean id="shiroEhcacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+		<property name="cacheManagerConfigFile" value="classpath:ehcache/ehcache-shiro.xml"/>
+	</bean>
+	
+	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+	
+	<mvc:view-controller path="/" view-name="redirect:/projectPage"/>
+	<!-- <mvc:annotation-driven>
+		<mvc:message-converters register-defaults="true">
+			将StringHttpMessageConverter的默认编码设为UTF-8
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+		    	<constructor-arg value="UTF-8" />
+			</bean>
+			将Jackson2HttpMessageConverter的默认格式化输出设为true
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="prettyPrint" value="true"/>
+            </bean>			
+  		</mvc:message-converters>
+	</mvc:annotation-driven> -->
+</beans>

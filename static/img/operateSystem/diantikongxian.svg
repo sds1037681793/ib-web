@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="90px" height="100px" viewBox="0 0 90 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>daintikongxian</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1375.000000, -880.000000)">
+            <g id="Group-16-Copy-2" transform="translate(1375.000000, 851.000000)">
+                <g id="daintikongxian" transform="translate(0.000000, 29.000000)">
+                    <path d="M15,85 L75,85 L75,15 L15,15 L15,85 Z M20,20 L70,20 L70,80 L20,80 L20,20 Z M80,0 L90,0 L90,100 L80,100 L80,0 Z M0,0 L10,0 L10,100 L0,100 L0,0 Z" id="Shape" fill="#56E4FF" fill-rule="nonzero" opacity="0.5"></path>
+                    <rect id="Rectangle-12" fill="#19FFD0" x="35" y="42" width="7" height="16"></rect>
+                    <rect id="Rectangle-12-Copy" fill="#19FFD0" x="48" y="42" width="7" height="16"></rect>
+                    <g id="Group-18" transform="translate(39.000000, 0.000000)" fill="#56E4FF" opacity="0.5">
+                        <polygon id="Path" points="3.45032162 13.6019071 6.66360193 13.6019071 6.66360193 6.791268 10.1139234 10.0517588 10.1139234 5.39670435 5.05696171 0 0 5.39670435 0 10.0517588 3.45032162 6.791268"></polygon>
+                        <polygon id="Path-Copy-2" transform="translate(5.056962, 92.800954) scale(1, -1) translate(-5.056962, -92.800954) " points="3.45032162 99.6019071 6.66360193 99.6019071 6.66360193 92.791268 10.1139234 96.0517588 10.1139234 91.3967043 5.05696171 86 0 91.3967043 0 96.0517588 3.45032162 92.791268"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

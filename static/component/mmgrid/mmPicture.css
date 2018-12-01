@@ -1,0 +1,56 @@
+.mmPicture {
+	position: absolute;
+	overflow-y: hidden;
+	top: 0px;
+	left: 15px;
+	z-index: 10;
+	border: 1px solid;
+	_width: 200px;
+	min-width: 200px;
+	_height: 200px;
+	min-height: 200px;
+	background-color: #fff;
+}
+
+.mmPicture .headerDiv {
+	width: 100%;
+	height: 25px;
+	line-height: 20px;
+	background-color: rgb(55, 180, 201);
+
+}
+
+.mmPicture .headerDiv label {
+	style ="width: 48%;
+	height: 25px;
+	color: #333333;
+	text-align: left;
+}
+
+.mmPicture .headerDiv button {
+	style ="height: 25px;
+	text-align: right;
+}
+
+.mmPicture .contentDiv  {
+	
+}
+.mmPicture .contentDiv .imageDiv {
+	width: 300px;
+	height: 300px;
+	float: left;
+	border: 1px solid;
+	position: relative;
+}
+
+.mmPicture .contentDiv .imageDiv label {
+	position:absolute;
+	width: 48%;
+	height: auto;
+	color: #A8C9D4;
+	text-align: left;
+}
+.mmPicture .contentDiv .imageDiv img {
+	width: 100%;
+	height: 297px;
+}

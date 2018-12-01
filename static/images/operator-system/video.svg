@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="96px" height="38px" viewBox="0 0 96 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>实时视频</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="88" height="30" rx="4"></rect>
+        <filter x="-8.0%" y="-16.7%" width="115.9%" height="146.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="项目首页－停车场区域" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1044.000000, -485.000000)">
+        <g id="Group-7" transform="translate(1048.000000, 487.000000)">
+            <g id="Group-2">
+                <g id="实时视频">
+                    <g id="Group-4">
+                        <g id="Rectangle-7">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill-opacity="0.75" fill="#027FBA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#54C1F0" stroke-width="1" x="0.5" y="0.5" width="87" height="29" rx="4"></rect>
+                        </g>
+                        <g id="监控" transform="translate(9.000000, 8.000000)" fill="#66E9FF" fill-rule="nonzero">
+                            <path d="M12.1727058,6.05310815 C12.1727058,2.69562802 9.46930042,0.010110543 6.09004372,0.010110543 C2.71078702,0.010110543 0.00660391211,2.69718349 0.00660391211,6.05388589 C0.00660391211,8.68418421 1.69739887,10.9217266 4.06171195,11.7616799 C2.76678389,12.2080995 1.92138641,13.0488306 1.92138641,14 L10.0875994,14 C10.0875994,13.0488306 9.29897654,12.2080995 8.06082312,11.7616799 C10.4826886,10.9225043 12.1719281,8.68496195 12.1719281,6.05388589 L12.1727058,6.05310815 Z M6.20281523,10.3057608 C4.45602339,10.3057608 2.99154919,8.85061941 2.99154919,7.11549359 C2.99154919,5.38192323 4.45602339,3.92678185 6.20281523,3.92678185 C8.00482622,3.92678185 9.41408126,5.38192323 9.41408128,7.11549359 C9.4116109,7.96462225 9.07171115,8.77794476 8.46924519,9.3763262 C7.86677923,9.97470764 7.05116332,10.3090668 6.2020375,10.3057608 L6.20281523,10.3057608 Z M6.09004372,5.71868229 C5.24464624,5.71868229 4.51357575,6.44508638 4.51357575,7.28426199 C4.51357575,8.17865675 5.24464624,8.85061941 6.09004372,8.85061941 C6.99221582,8.85061941 7.66573396,8.12343759 7.66573396,7.28426199 C7.66573396,6.39064497 6.93466346,5.71868229 6.09004372,5.71868229 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,244 @@
+@CHARSET "UTF-8";
+.rodeTraffic1 {
+    z-index: 1;
+    position: absolute;
+    left: 1030px;
+    top: 888px;
+    width: 258px;
+    height: 191px;
+    background-image:url(../images/rodeTraffic/blue10.png);
+}
+.rodeTraffic1Yellow {
+    z-index: 1;
+    position: absolute;
+    left: 1032px;
+    top: 890px;
+    width: 258px;
+    height: 191px;
+    background-image:url(../images/rodeTraffic/yellow10.png);
+}
+.rodeTraffic2 {
+    z-index: 1;
+    position: absolute;
+    left: 1175px;
+    top: 935px;
+    width: 207px;
+    height: 145px;
+    background-image:url(../images/rodeTraffic/blue11.png);
+}
+.rodeTraffic2Yellow {
+    z-index: 1;
+    position: absolute;
+    left: 1175px;
+    top: 935px;
+    width: 207px;
+    height: 145px;
+    background-image:url(../images/rodeTraffic/yellow11.png);
+}
+.rodeTrafficShow {
+    z-index: 2;
+    width: 81px;
+    height: 100px;
+    position: absolute;
+    left: 1281px;
+    top: 904px;
+    background-image:url(../images/rodeTraffic/yibanyongdu.svg);
+}
+.rodeTrafficShowYellow {
+    z-index: 2;
+    width: 81px;
+    height: 100px;
+    position: absolute;
+    left: 1140px;
+    top: 904px;
+    background-image:url(../images/rodeTraffic/yibanyongdu.svg);
+}
+.rodeTrafficShowTwo {
+    z-index: 2;
+    width: 81px;
+    height: 100px;
+    position: absolute;
+    left: 1404px;
+    top: 527px;
+    background-image:url(../images/rodeTraffic/yanzhongyongdu.svg);
+}
+.rodeTraffic3 {
+    z-index: 1;
+    position: absolute;
+    left: 1201px;
+    top: 742px;
+    width: 218px;
+    height: 187px;
+    background-image:url(../images/rodeTraffic/blue08.png);
+}
+.rodeTraffic3Red {
+    z-index: 1;
+    position: absolute;
+    left: 1203px;
+    top: 744px;
+    width: 218px;
+    height: 187px;
+    background-image:url(../images/rodeTraffic/red08.png);
+}
+.rodeTraffic4 {
+    z-index: 1;
+    position: absolute;
+    left: 1296px;
+    top: 779px;
+    width: 215px;
+    height: 197px;
+    background-image:url(../images/rodeTraffic/blue09.png);
+}
+.rodeTraffic4Yellow{
+    z-index: 1;
+    position: absolute;
+    left: 1296px;
+    top: 779px;
+    width: 215px;
+    height: 197px;
+    background-image:url(../images/rodeTraffic/yellow09.png);
+}
+.rodeTraffic4Red{
+    z-index: 1;
+    position: absolute;
+    left: 1296px;
+    top: 779px;
+    width: 215px;
+    height: 197px;
+    background-image:url(../images/rodeTraffic/red09.png);
+}
+.rodeTraffic5 {
+    z-index: 1;
+    position: absolute;
+    left: 1326px;
+    top: 455px;
+    width: 461px;
+    height: 356px;
+    background-image:url(../images/rodeTraffic/blue05.png);
+}
+.rodeTraffic5Red {
+    z-index: 1;
+    position: absolute;
+    left: 1326px;
+    top: 456px;
+    width: 461px;
+    height: 356px;
+    background-image:url(../images/rodeTraffic/red05.png);
+}
+.rodeTraffic6 {
+    z-index: 1;
+    position: absolute;
+    left: 1258px;
+    top: 487px;
+    width: 123px;
+    height: 101px;
+    background-image:url(../images/rodeTraffic/blue06.png);
+}
+.rodeTraffic6Yellow {
+    z-index: 1;
+    position: absolute;
+    left: 1258px;
+    top: 487px;
+    width: 123px;
+    height: 101px;
+    background-image:url(../images/rodeTraffic/yellow06.png);
+}
+.rodeTraffic7 {
+    z-index: 1;
+    position: absolute;
+    left: 1742px;
+    top: 661px;
+    width: 177px;
+    height: 140px;
+    background-image:url(../images/rodeTraffic/blue07.png);
+}
+.rodeTraffic7Yellow {
+    z-index: 1;
+    position: absolute;
+    left: 1742px;
+    top: 661px;
+    width: 177px;
+    height: 140px;
+    background-image:url(../images/rodeTraffic/yellow07.png);
+}
+.rodeTraffic8 {
+    z-index: 1;
+    position: absolute;
+    left: 1595px;
+    top: 320px;
+    width: 193px;
+    height: 166px;
+    background-image:url(../images/rodeTraffic/blue03.png);
+}
+.rodeTraffic8Yellow {
+    z-index: 1;
+    position: absolute;
+    left: 1592px;
+    top: 320px;
+    width: 193px;
+    height: 166px;
+    background-image:url(../images/rodeTraffic/yellow03.png);
+}
+.rodeTraffic8Red {
+    z-index: 1;
+    position: absolute;
+    left: 1592px;
+    top: 320px;
+    width: 193px;
+    height: 166px;
+    background-image:url(../images/rodeTraffic/red03.png);
+}
+.rodeTraffic9 {
+    z-index: 1;
+    position: absolute;
+    left: 1675px;
+    top: 345px;
+    width: 192px;
+    height: 172px;
+    background-image:url(../images/rodeTraffic/blue04.png);
+}
+.rodeTraffic9Red {
+    z-index: 1;
+    position: absolute;
+    left: 1672px;
+    top: 345px;
+    width: 192px;
+    height: 172px;
+    background-image:url(../images/rodeTraffic/red04.png);
+}
+.rodeTraffic10 {
+    z-index: 1;
+    position: absolute;
+    left: 1716px;
+    top: 93px;
+    width: 206px;
+    height: 250px;
+    background-image:url(../images/rodeTraffic/blue01.png);
+}
+.rodeTraffic10Yellow {
+    z-index: 1;
+    position: absolute;
+    left: 1713px;
+    top: 93px;
+    width: 206px;
+    height: 250px;
+    background-image:url(../images/rodeTraffic/yellow01.png);
+}
+.rodeTraffic11 {
+    z-index: 1;
+    position: absolute;
+    left: 1792px;
+    top: 193px;
+    width: 127px;
+    height: 172px;
+    background-image:url(../images/rodeTraffic/blue02.png);
+}
+.rodeTraffic11Yellow {
+    z-index: 1;
+    position: absolute;
+    left: 1792px;
+    top: 194px;
+    width: 127px;
+    height: 172px;
+    background-image:url(../images/rodeTraffic/yellow02.png);
+}

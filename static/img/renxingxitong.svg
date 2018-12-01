@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="30px" viewBox="0 0 39 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>renxingxitong</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="42" height="42"></rect>
+    </defs>
+    <g id="火炬小区项目首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1402.000000, -718.000000)">
+        <g id="Group-40-Copy-7" transform="translate(1370.000000, 600.000000)">
+            <g id="Group-22" transform="translate(30.000000, 95.000000)">
+                <g id="renxingxitong" transform="translate(0.000000, 17.000000)">
+                    <g id="Rectangle-17" opacity="0">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="41" height="41"></rect>
+                    </g>
+                    <path d="M25.1089889,15.1923455 C25.1089889,10.1970648 21.1231492,6 16.4428526,6 C11.6864881,6 7.93116878,10.1970648 7.93116878,15.1901521 C7.93116878,18.272546 9.31853829,20.9172472 11.3783553,22.5090928 C5.90957872,24.6201877 2,29.8926406 2,36 L31,36 C30.9799212,29.8926406 27.0904213,24.6221818 21.2552061,22.5132803 C23.6855161,20.9192412 25.1089889,18.2747394 25.1089889,15.1923455 Z M27.7786042,15.4237539 C27.7786042,18.0000986 26.7350796,20.6375783 25,22.3469901 C30.4049269,25.0235172 33.6270242,30.1971109 33.6270242,36 L41,36 C41,31.1003303 37.8160215,26.8127989 33.3002092,25.1990337 C35.0556059,23.8619534 36.2132932,21.3244589 36.2132932,19.3365873 C36.2132932,15.2265444 33.2042351,12 29.1514591,12 C28.4753837,12 27.83704,12.0980131 27.2973793,12.3147463 C27.4695909,13.1601834 27.7786042,14.3602031 27.7786042,15.4237539 Z" id="Shape" fill="#20608D" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

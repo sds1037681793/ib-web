@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>vip</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="vip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="strangerSmallTwo" transform="translate(-1.000000, 0.000000)">
+            <g id="Mask" transform="translate(0.600000, 0.000000)" fill="#F5C033" fill-rule="nonzero">
+                <polygon id="path-1" points="14.8652293 0.00339661585 33.3333333 0 0 33.3333333 0 14.0132412"></polygon>
+            </g>
+            <g id="陌生人" transform="translate(13.363961, 11.363961) rotate(-45.000000) translate(-13.363961, -11.363961) translate(8.363961, 7.363961)" fill="#FFFFFF" font-family="PingFangSC-Regular, PingFang SC" font-size="6" font-weight="normal">
+                <text id="VIP">
+                    <tspan x="0" y="6">VIP</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,75 @@
+.accordion-1-sidebar {
+	display: block;
+	float: left;
+	position: relative;
+	width: 220px;
+	z-index: 16;
+}
+.accordion-1-sidebar > ul {
+	list-style: none;
+	margin: 0px 0 0;
+	padding: 0;
+	position: absolute;
+	width: 220px;
+}
+.accordion-1-sidebar > ul > li {
+	display: block;
+	position: relative;
+}
+.accordion-1-sidebar > ul > li > a {
+	padding: 20px 0 20px 0px;
+	display: block;
+	color: #d1d6da;
+}
+.accordion-1-sidebar > ul > li > a > span.expand:before {
+	content: "\2b";
+}
+.accordion-1-sidebar > ul > li.open > a > span.expand:before {
+	content: "\2212";
+}
+.accordion-1-sidebar > ul > li.active > a {
+	background: url("../img/menu-active.png") no-repeat scroll right center transparent !important;
+	text-decoration:none;
+}
+.accordion-1-sidebar > ul > li > a > .label {
+	margin: 0 20px 0 0;
+	float: right;
+	padding: 3px 5px 2px;
+}
+.accordion-1-sidebar > ul li a span.icon {
+	font-size: 23px;
+}
+.accordion-1-sidebar > ul li ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+.accordion-1-sidebar > ul li.open ul {
+	display: block;
+}
+.accordion-1-sidebar > ul li ul li a {
+	padding: 10px 0 10px 25px;
+	display: block;
+/* 	color: #777777; */
+}
+.accordion-1-sidebar > ul li ul li.active > a {
+	background: url("../img/menu-active.png") no-repeat scroll right center transparent !important;
+	text-decoration:none;
+}
+
+.accordion-1-sidebar > ul li ul li a {
+	border-top: 0;
+}
+.accordion-1-sidebar > ul li ul li a {
+	border-bottom: 0;
+}
+.accordion-1-sidebar > .icon {
+	margin-right: 5px;
+}
+
+.accordion-1-sidebar > ul > li.active a{
+
+	 text-decoration:none;
+}
+
+

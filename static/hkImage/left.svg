@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>左</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="视频监控九宫格" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1695.000000, -579.000000)">
+        <g id="Group" transform="translate(1695.000000, 529.000000)">
+            <g id="左" transform="translate(0.000000, 50.000000)">
+                <rect id="Rectangle-15-Copy-3" fill="#00BFA5" x="0" y="0" width="40" height="40" rx="4"></rect>
+                <path d="M12.0095131,27.9951903 C10.1761798,27.9951903 9.48617976,26.7325236 10.4758464,25.1895236 L18.2095131,13.1335236 C19.1995131,11.5905236 20.8191798,11.5905236 21.8091798,13.1335236 L29.5428464,25.1895236 C30.5328464,26.7325236 29.8428464,27.9951903 28.0095131,27.9951903 L12.0095131,27.9951903 Z" id="Shape-Copy-3" fill="#FFFFFF" fill-rule="nonzero" transform="translate(20.009458, 19.985732) scale(-1, 1) rotate(90.000000) translate(-20.009458, -19.985732) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

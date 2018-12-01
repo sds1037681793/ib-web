@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+.vp-class {
+    background-color: #000;
+}
+.pluginLink {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.pluginLinkSel {
+    color: #0fffff;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}

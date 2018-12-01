@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="220px" height="300px" viewBox="0 0 220 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>底框</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="电梯系统／垂直电梯系统" transform="translate(-1201.000000, -724.000000)">
+            <g id="底框" transform="translate(1201.000000, 724.000000)">
+                <rect id="Rectangle-3" stroke="#A4A4A4" x="0.5" y="0.5" width="219" height="299"></rect>
+                <polygon id="Rectangle-16" fill="#4DA1FF" points="220 276 220 300 196 300"></polygon>
+                <polygon id="Rectangle-16-Copy" fill="#4DA1FF" transform="translate(12.000000, 12.000000) scale(-1, -1) translate(-12.000000, -12.000000) " points="24 0 24 24 0 24"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

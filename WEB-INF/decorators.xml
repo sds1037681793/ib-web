@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/layouts/">
+	<excludes>
+		<pattern>/static/*</pattern>
+		<pattern>/api/*</pattern>
+		<pattern>/login</pattern>
+		<pattern>/main</pattern>
+	</excludes>
+	
+	<decorator name="frame" page="frame/frame.jsp">
+	    <pattern>/organizeSelect/*</pattern>
+	    <pattern>/roleFunctionManage</pattern>
+	    <pattern>/charge/page</pattern>
+	    <pattern>/common/changeOrganize</pattern>
+	    <pattern>/passage</pattern>
+	    <pattern>/charge/passageSelect</pattern>
+	    <pattern>/imageShow</pattern>
+	    <pattern>/accessMonitoring</pattern>
+	    <pattern>/elevatorSystem/showTrueVideo</pattern>
+		<pattern>/videomonitoring/showVideo</pattern>
+		<pattern>/fireFightingManage/firesImageForArea</pattern>
+	</decorator>
+</decorators>
+

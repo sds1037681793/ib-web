@@ -1,0 +1,129 @@
+html {
+	font-size: 12px;
+	font-family: SimHei;
+	overflow: -moz-scrollbars-vertical;
+}
+
+.project-main-body {
+	line-height: 20px;
+	height: 1080px;
+	margin: 0px;
+	margin-top: -20px;
+	background: #262D36 !important;
+	width: 1920px;
+}
+
+.project-main-content {
+	background: #EEE none repeat scroll 0px 0px;
+	margin-left: 240px;
+	margin-right: 0px;
+	padding-bottom: 15px;
+	position: relative;
+	min-height: 100%;
+	outline: medium none;
+	min-height: 500px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.head {
+	width: 1680px;
+	height: 100px;
+	background: #262D36;
+}
+
+.menu_head {
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.20);
+	width: 102.5rem;
+	height: 100%;
+	float: left;
+}
+
+.time_head {
+	width: 26.67rem;
+	background: rgba(255, 255, 255, 0.04);
+	height: 100%;
+	position: relative;
+	float: left;
+	font-family: PingFangSC-Regular;
+	font-size: 1.67rem;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+.week {
+	font-family: PingFangSC-Regular;
+	font-size: 1.67rem;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: right;
+	padding-right: 2.5rem;
+	height: 100px;
+	float: right;
+	z-index: 1;
+	position: relative;
+}
+
+.envMessage {
+	font-family: PingFangSC-Light;
+	font-size: 20px;
+	color: #FFFFFF;
+	height: 100px;
+	float: left;
+	padding-left: 1.5rem;
+	line-height: 100px;
+	padding-top: 13px;
+	z-index: 999;
+	position: absolute;
+}
+
+.menu_item {
+	width: 10rem;
+	height: 8.33rem;
+	float: left;
+	cursor: pointer;
+}
+
+.menu_item table {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: -0.1px;
+	width: 100%;
+}
+
+.first_one {
+	height: 50px;
+	vertical-align: bottom;
+}
+
+.second {
+	height: 40px;
+}
+
+.three {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10rem;
+	height: 40px;
+	line-height: 40px;
+	background: rgba(255, 255, 255, 0);
+}
+
+.three a {
+	height: 38px;
+	line-height: 38px;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	letter-spacing: 0;
+}
+
+.accordion-sidebar>ul {
+	width: 240px !important;
+}
+
+.accordion-1-sidebar>ul {
+	width: 240px !important;
+}

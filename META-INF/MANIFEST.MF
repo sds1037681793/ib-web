@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: ib-web
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.rib.ib
+Built-By: Matt
+Build-Jdk: 1.7.0_67
+Created-By: Apache Maven 3.3.9
+Archiver-Version: Plexus Archiver
+

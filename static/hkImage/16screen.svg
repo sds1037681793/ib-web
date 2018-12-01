@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="46px" viewBox="0 0 60 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>16分屏</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="视频监控九宫格" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-595.000000, -984.000000)">
+        <g id="Group-29" transform="translate(588.000000, 976.000000)" fill="#9B9B9B" fill-rule="nonzero">
+            <g id="Group-17" transform="translate(7.000000, 8.000000)">
+                <g id="16分屏">
+                    <g id="icon_4分屏-copy-4">
+                        <polygon id="Shape" points="0 0 13.7693632 0 13.7693632 10.0420339 9.98893363e-16 10.0420339"></polygon>
+                        <polygon id="Shape-Copy-19" points="0 23.92 13.7693632 23.92 13.7693632 33.9620339 9.98893363e-16 33.9620339"></polygon>
+                        <polygon id="Shape-Copy-10" points="0 11.96 13.7693632 11.96 13.7693632 22.0020339 9.98893363e-16 22.0020339"></polygon>
+                        <polygon id="Shape-Copy-20" points="0 35.88 13.7693632 35.88 13.7693632 45.9220339 9.98893363e-16 45.9220339"></polygon>
+                        <polygon id="Shape-Copy-7" points="15.2380952 0 29.0074584 0 29.0074584 10.0420339 15.2380952 10.0420339"></polygon>
+                        <polygon id="Shape-Copy-21" points="15.2380952 23.92 29.0074584 23.92 29.0074584 33.9620339 15.2380952 33.9620339"></polygon>
+                        <polygon id="Shape-Copy-11" points="15.2380952 11.96 29.0074584 11.96 29.0074584 22.0020339 15.2380952 22.0020339"></polygon>
+                        <polygon id="Shape-Copy-22" points="15.2380952 35.88 29.0074584 35.88 29.0074584 45.9220339 15.2380952 45.9220339"></polygon>
+                        <polygon id="Shape-Copy-8" points="30.4761905 0 44.2455536 0 44.2455536 10.0420339 30.4761905 10.0420339"></polygon>
+                        <polygon id="Shape-Copy-23" points="30.4761905 23.92 44.2455536 23.92 44.2455536 33.9620339 30.4761905 33.9620339"></polygon>
+                        <polygon id="Shape-Copy-12" points="30.4761905 11.96 44.2455536 11.96 44.2455536 22.0020339 30.4761905 22.0020339"></polygon>
+                        <polygon id="Shape-Copy-24" points="30.4761905 35.88 44.2455536 35.88 44.2455536 45.9220339 30.4761905 45.9220339"></polygon>
+                        <polygon id="Shape-Copy-9" points="45.7142857 0 59.4836489 0 59.4836489 10.0420339 45.7142857 10.0420339"></polygon>
+                        <polygon id="Shape-Copy-25" points="45.7142857 23.92 59.4836489 23.92 59.4836489 33.9620339 45.7142857 33.9620339"></polygon>
+                        <polygon id="Shape-Copy-18" points="45.7142857 11.96 59.4836489 11.96 59.4836489 22.0020339 45.7142857 22.0020339"></polygon>
+                        <polygon id="Shape-Copy-26" points="45.7142857 35.88 59.4836489 35.88 59.4836489 45.9220339 45.7142857 45.9220339"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

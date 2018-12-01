@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="229px" height="140px" viewBox="0 0 229 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>tangan</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1112.000000, -375.000000)">
+            <g id="tangan" transform="translate(1112.000000, 375.000000)">
+                <path d="M2,136 C0.895343476,136 0,136.896266 0,138 C0,139.103734 0.895343476,140 2,140 C3.10465652,140 4,139.103734 4,138 C4,136.896266 3.10465652,136 2,136" id="Fill-9" fill="#03EDFF"></path>
+                <path d="M45.0004527,61 C42.7910583,61 41,62.7901528 41,64.9986418 C41,67.2080362 42.7910583,69 45.0004527,69 C47.2098472,69 49,67.2080362 49,64.9986418 C49,62.7901528 47.2098472,61 45.0004527,61" id="Fill-11" fill="#03EDFF"></path>
+                <path d="M128,4 C128,1.79035544 126.209847,0 124.000453,0 C121.791058,0 120,1.79035544 120,4 C120,6.20964456 121.791058,8 124.000453,8 C126.209847,8 128,6.20964456 128,4" id="Fill-13" fill="#03EDFF"></path>
+                <path d="M2,138 L44,66" id="Stroke-15" stroke="#03EDFF"></path>
+                <path d="M124,4 L228.5,4" id="Stroke-17" stroke="#03EDFF"></path>
+                <g id="Group-20" transform="translate(128.000000, 4.000000)"></g>
+                <path d="M43,66 L124,4" id="Stroke-19" stroke="#03EDFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

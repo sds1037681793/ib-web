@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+.modal-contents{
+    background: rgba(1,68,101,0.75);
+    border: 1px solid rgba(0,192,165,0.60);
+}
+.modal-title{
+
+}
+.modal-headers{
+    padding:15px;
+    min-height:16.43px
+}
+.modal-body{
+    padding:15px;
+}
+.modal-dialogs{
+width: auto;
+}
+ .modal-topLeft{
+    background-image: url(../img/bjCloud/popUp/zuoshangjiao.svg);
+    position :relative;
+    width: 28px;
+    height: 28px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.modal-topRight{
+    background-image: url(../img/bjCloud/popUp/youshangjiao.svg);
+    float:right;
+    width: 50px;
+    height: 50px;
+}
+.modal-bottomLeft{
+    background-image: url(../img/bjCloud/popUp/zuoxiaojiao.svg);
+    position :relative;
+    width: 50px;
+    height: 50px;
+}
+.modal-bottomRight{
+    background-image: url(../img/bjCloud/popUp/youxiajiao.svg);
+    position :relative;
+    float:right;
+    width: 28px;
+    height: 28px;
+    margin-top: 14px;
+    margin-right: 6px;
+}

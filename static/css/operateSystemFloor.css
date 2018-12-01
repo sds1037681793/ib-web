@@ -1,0 +1,401 @@
+.oneFloorLeft{
+	position: absolute;
+	left: 600px;
+	top: 875px;
+	width: 196px;
+	height: 17px;
+	transform:rotateZ(31.5deg) skew(32deg);
+	transform-origin: 0 0;
+	cursor: pointer;
+	z-index:3
+}
+.oneFloorRight{
+	position: absolute;
+	left: 765px;
+	top: 977px;
+    width: 102px;
+    height: 17px;
+    transform: rotateZ(-43.5deg) skew(-39deg);
+	transform-origin: 0 0;
+	cursor: pointer;
+	z-index:3
+}
+.oneFloorHover {
+	position: absolute;
+	left: 596px;
+	top: 870px;
+	width: 248px;
+	height: 130px;
+    background-image: url(../images/operator-system/oneFloorHover.svg);
+    z-index:2
+}
+
+.threeFloorLeft{
+	position: absolute;
+	left: 595px;
+	top: 830px;
+	width: 196px;
+	height: 17px;
+	transform:rotateZ(31.5deg) skew(32deg);
+	transform-origin: 0 0;
+	cursor: pointer;
+	z-index:3
+}
+.threeFloorRight{
+	position: absolute;
+	left: 760px;
+	top: 932px;
+    width: 102px;
+    height: 17px;
+    transform: rotateZ(-43.5deg) skew(-39deg);
+	transform-origin: 0 0;
+	cursor: pointer;
+	z-index:3
+}
+.threeFloorHover {
+	position: absolute;
+	left: 591px;
+	top: 825px;
+	width: 248px;
+	height: 130px;
+    background-image: url(../images/operator-system/threeFloorHover.svg);
+    z-index:2
+}
+.threeFloorAlarm {
+	animation: floor-shine 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+	position: absolute;
+	left: 591px;
+	top: 825px;
+	width: 248px;
+	height: 130px;
+    background-image: url(../images/operator-system/threeFloorAlarm.png);
+    z-index:2
+}
+
+.oneFloorAlarm {
+	animation: floor-shine 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+	position: absolute;
+	left: 596px;
+	top: 870px;
+	width: 248px;
+	height: 130px;
+    background-image: url(../images/operator-system/oneFloorAlarm.png);
+    z-index:2
+}
+.basement{
+	position: absolute;
+	left: 452px;
+	top: 922px;
+    width: 129px;
+    height: 58px;
+    cursor: pointer;
+	z-index:3
+}
+.basementBlock{
+	position: absolute;
+	left: 439px;
+	top: 857px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    background: rgba(9, 162, 221, 0.40);
+	border: 1px solid #56E4FF;
+	width: 160px;
+	height: 50px;
+	font-family: PingFangSC-Regular;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0.78px;
+	text-align: center;
+	padding-top: 10px;
+	z-index:3
+}
+.basementAlarm {
+	animation: floor-shine 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+	position: absolute;
+	left: 452px;
+	top: 921px;
+    width: 129px;
+    height: 58px;
+	background-image: url(../images/operator-system/basement-red.png);
+	z-index:2
+}
+
+@keyframes floor-shine { 
+	60% {
+		opacity:0.5;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+.oneBack{
+	width: 1920px;
+	height: 1080px;
+	background-image:
+		url(../images/operator-system/oneFloorVR.png);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.gOneBack{
+	width: 1920px;
+	height: 1080px;
+	background-image:
+		url(../images/operator-system/gFloorVR.png);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.bOneBack{
+	width: 1920px;
+	height: 1080px;
+	background-image:
+		url(../images/operator-system/bOneFloorVR.png);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.threeBack{
+	width: 1920px;
+	height: 1080px;
+	background-image:
+		url(../images/operator-system/threeFloorVR.png);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.goBack{
+	position: absolute;
+	left: 65px;
+	top: 65px;
+	width: 60px;
+    height: 48px;
+	background-image:url(../img/base/back.png);
+	opacity: 0.2;
+	z-index: 2;
+	cursor: pointer;
+}
+.goBack:hover{
+	opacity: 0.5;
+}
+
+.leftAllFloor{
+	position: absolute;
+	left: 502px;
+	top: 840px;
+	z-index: 2;
+/* 	opacity:0.4;
+	background: rgb(9,162,221); */
+}
+.leftAllFloor div{
+	width: 100px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	background: rgba(9,162,221,0.40);
+	border: 1px solid rgba(86,228,255,0.40);
+	cursor: pointer;
+}
+
+.leftAllFloor div span{
+	font-family: PingFangSC-Regular;
+	font-size: 20px;
+	color: #56E4FF;
+	letter-spacing: 1.3px;
+	opacity:0.4;
+}
+.threeFloorAccess{
+    position: absolute;
+    left: 861px;
+    top: 795px;
+    width: 182px;
+    height: 69px;
+    transform: rotateZ(22.3deg) skew(-33deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.oneFloorAccess{
+    position: absolute;
+    left: 862px;
+    top: 856px;
+    width: 182px;
+    height: 69px;
+    transform: rotateZ(22.3deg) skew(-33deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.b1FloorBoiler{
+    position: absolute;
+    left: 750px;
+    top: 985px;
+    width: 92px;
+    height: 65px;
+    transform: rotateZ(-36deg) skew(23deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.gFloorFireOne {
+	position: absolute;
+    left: 842px;
+    top: 924px;
+    width: 120px;
+    height: 34px;
+    transform: rotateZ(-37deg) skew(28deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.gFloorFireTwo {
+    position: absolute;
+    left: 931px;
+    top: 856px;
+    width: 124px;
+    height: 72.5px;
+    transform: rotateZ(-38deg) skew(31deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.gFloorParkingOne {
+    position: absolute;
+    left: 980px;
+    top: 913px;
+    width: 190px;
+    height: 78px;
+    transform: rotateZ(-40deg) skew(31deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.gFloorParkingTwo {
+    position: absolute;
+    left: 962px;
+    top: 978px;
+    width: 134px;
+    height: 69px;
+    transform: rotateZ(-39deg) skew(28deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.gFloorParkingThree {
+    position: absolute;
+    left: 1011px;
+    top: 943px;
+    width: 76px;
+    height: 90px;
+    transform: rotateZ(-39deg) skew(28deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.gFloorSupplyOne{
+	position: absolute;
+    left: 1185px;
+    top: 810px;
+    width: 30px;
+    height: 71px;
+    transform: rotateZ(-42deg) skew(29deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.gFloorSupplyTwo{
+    position: absolute;
+    left: 1206px;
+    top: 790px;
+    width: 29px;
+    height: 46px;
+    transform: rotateZ(-43deg) skew(27deg);
+    transform-origin: 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.b1FloorBoilerArea {
+	position: absolute;
+	left: 761px;
+	top: 932px;
+	width: 128px;
+	height: 89px;
+    background-image: url(../images/operator-system/b1-glf-yellow.svg);
+    z-index:1
+}
+.gFloorParkingArea {
+	position: absolute;
+	left: 972px;
+	top: 791px;
+	width: 238px;
+	height: 217px;
+    background-image: url(../images/operator-system/g-parking-green.svg);
+    z-index:1
+}
+.gFloorFireArea {
+	position: absolute;
+	left: 843px;
+	top: 781px;
+	width: 264px;
+	height: 160px;
+    background-image: url(../images/operator-system/g-fire-red.svg);
+    z-index:1
+}
+.gFloorSupplyArea {
+    position: absolute;
+    left: 1185px;
+    top: 771px;
+    width: 98px;
+    height: 65px;
+    background-image: url(../images/operator-system/g-supply-yellow.svg);
+    z-index: 1;
+}
+.b1FloorBoilerHover{
+   transform: translate3d(0px, 0px, 0px);
+   position: absolute;
+   left: 761px;
+   top: 932px;
+   width: 128px;
+   height: 89px;
+   background-image: url(../images/operator-system/b1-glf-yellow.svg);
+}
+.gFloorParkingHover {
+	transform: translate3d(0px, 0px, 0px);
+	position: absolute;
+	left: 972px;
+	top: 791px;
+	width: 238px;
+	height: 217px;
+    background-image: url(../images/operator-system/g-parking-green.svg);
+    z-index:1
+}
+.gFloorFireHover {
+	transform: translate3d(0px, 0px, 0px);
+	position: absolute;
+	left: 843px;
+	top: 781px;
+	width: 264px;
+	height: 160px;
+    background-image: url(../images/operator-system/g-fire-red.svg);
+    z-index:1
+}
+.gFloorSupplyHover {
+	transform: translate3d(0px, 0px, 0px);
+    position: absolute;
+    left: 1185px;
+    top: 771px;
+    width: 98px;
+    height: 65px;
+    background-image: url(../images/operator-system/g-supply-yellow.svg);
+    z-index: 1;
+}

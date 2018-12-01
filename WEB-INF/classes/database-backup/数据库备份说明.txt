@@ -1,0 +1,6 @@
+一、Linux环境
+1、将backup.sh放到合适的目录，比如/home/cando/database-backup
+2、赋予脚本可执行权限：chmod +x /home/cando/database-backup/backup.sh
+3、在定时任务中增加定时机制：crontab -e，在最后一行增加如下配置：0 4 * * * /home/cando/database-backup/backup.sh，代表每天凌晨4点定时执行，可根据实际需要进行修改
+4、重启定时任务：sudo service cron restart
+5、查看启动是否成功：sudo service cron status

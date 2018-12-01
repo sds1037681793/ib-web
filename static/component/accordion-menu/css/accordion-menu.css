@@ -1,0 +1,101 @@
+.accordion-sidebar {
+	display: block;
+	float: left;
+	position: relative;
+	width: 220px;
+	z-index: 16;
+}
+.accordion-sidebar > ul {
+	list-style: none;
+	margin: 0px 0 0;
+	padding: 0;
+	position: absolute;
+	width: 220px;
+}
+.accordion-sidebar > ul > li {
+	display: block;
+	position: relative;
+}
+.accordion-sidebar > ul > li > a {
+	padding: 10px 0 10px 15px;
+	display: block;
+	color: #d1d6da;
+}
+.accordion-sidebar > ul > li > a > span.expand:before {
+	content: "\2b";
+}
+.accordion-sidebar > ul > li.open > a > span.expand:before {
+	content: "\2212";
+}
+.accordion-sidebar > ul > li.active > a {
+	background: url("../img/menu-active.png") no-repeat scroll right center transparent !important;
+	text-decoration:none;
+}
+.accordion-sidebar > ul > li > a > .label {
+	margin: 0 20px 0 0;
+	float: right;
+	padding: 3px 5px 2px;
+}
+.accordion-sidebar > ul li a span.icon {
+	font-size: 23px;
+}
+.accordion-sidebar > ul li ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+.accordion-sidebar > ul li.open ul {
+	display: block;
+}
+.accordion-sidebar > ul li ul li a {
+	padding: 10px 0 10px 25px;
+	display: block;
+	color: #777777;
+}
+.accordion-sidebar > ul li ul li.active > a {
+	background: url("../img/menu-active.png") no-repeat scroll right center transparent !important;
+	text-decoration:none;
+}
+.accordion-sidebar > ul li ul li:first-child a {
+	border-top: 0;
+}
+.accordion-sidebar > ul li ul li:last-child a {
+	border-bottom: 0;
+}
+.accordion-sidebar > .icon {
+	margin-right: 5px;
+}
+/*****************/
+.accordion-sidebar > ul{
+	border-bottom: 1px solid #37414b
+}
+.accordion-sidebar > ul > li {
+	border-top: 1px solid #37414b;
+	border-bottom: 1px solid #1f262d;
+}
+.accordion-sidebar > ul > li.active {
+    background-color: #27a9e3;
+    border-bottom: 1px solid #27a9e3;
+    border-top: 1px solid #27a9e3;
+}
+.accordion-sidebar > ul > li.active a{
+	color:#fff; text-decoration:none;
+}
+
+.accordion-sidebar > ul > li > a > .label {
+	background-color:#F66;
+}
+.accordion-sidebar > ul > li > a:hover {
+	background-color: #27a9e3; color:#fff;
+}
+.accordion-sidebar > ul li ul {
+	background-color: #1e242b;
+}
+.accordion-sidebar > ul li ul li a{
+	color:#939da8
+}
+.accordion-sidebar > ul li ul li.active, .accordion-sidebar > ul li ul li a:hover, .accordion-sidebar > ul li ul li.active a {
+	color: #fff;
+	/*background-color: #28b779;*/
+	background-color: #27a9e3;
+}

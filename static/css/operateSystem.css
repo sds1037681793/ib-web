@@ -1,0 +1,395 @@
+html {
+	font-family: SimHei;
+	/* 		overflow:-moz-scrollbars-horizontal;   */
+	overflow: -moz-scrollbars-vertical;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.system_title {
+	font-size: 50px;
+	color: #56E4FF;
+	letter-spacing: 1.67px;
+	width: 517px;
+	top: 60px;
+	position: absolute;
+	left: 702px;
+	z-index: 999;
+}
+
+.system_canvas {
+	position: absolute;
+	width: 1500px;
+	height: 790px;
+	z-index: 200;
+}
+
+.zhuangshi {
+	width: 350px;
+	margin-top: 40px;
+	margin-left: 31px;
+	height: 24px;
+}
+
+.compass {
+	width: 200px;
+	height: 200px;
+	margin-top: 60px;
+	margin-left: 60px;
+	position: relative;
+	transform: rotate(36deg);
+}
+
+.car_move {
+	width: 300px;
+	height: 100px;
+	margin-left: 359px;
+	margin-top: 130px;
+}
+
+.car_monitor {
+	background-repeat: no-repeat;
+	height: 70px;
+	position: relative;
+}
+
+.huandun {
+	margin-top: 45px;
+	margin-left: 16px;
+	z-index: 200;
+	position: relative;
+}
+
+.ganzi {
+	width: 75px;
+	height: 4px;
+	position: absolute;
+	top: 47px;
+	left: 18px;
+	z-index: 100;
+}
+
+.car {
+	width: 65px;
+	height: 32px;
+	position: absolute;
+	top: 35px;
+	margin-left: 100px;
+	opacity: 0;
+}
+
+.elevator_show {
+	position: absolute;
+	left: 676px;
+	top: 628px;
+	width: 210px;
+}
+
+.face_monitor {
+	left: 988px;
+	top: 584px;
+	position: absolute;
+	width: 84px;
+	height: 84px;
+	text-align: center;
+	line-height: 84px;
+}
+.focus_face{
+	width: 300px; 
+	height: 210px;
+	position: absolute;
+	left:1036px;
+	top:375px;
+	display: none;
+}
+
+#faceCvs{
+position: relative;
+top: -202px;
+left: 206px;
+}
+.dianti_status {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+.boder {
+	border: 1px solid rgba(151, 255, 250, 0.4);
+	background: rgba(0, 7, 49, 0.6);
+}
+
+.head {
+	height: 46px;
+	width: 100%;
+	border-bottom: 1px solid rgba(151, 255, 250, 0.2);
+}
+
+.power_font {
+	opacity: 0.6;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.4px;
+	position: absolute;
+}
+
+.head_font {
+	font-size: 20px;
+	color: #56E4FF;
+	letter-spacing: 0.67px;
+	line-height: 46px;
+	margin-left: 10px;
+	float: left;
+}
+
+.right_box {
+	width: 100%;
+	height: 134px;
+}
+
+.alarm_box {
+	border-bottom: 1px solid rgba(86, 228, 255, 0.3);
+	width: 300px;
+	height: 47px;
+	overflow: hidden;
+}
+
+.alarm_device_name {
+	font-size: 14px;
+	color: #56E4FF;
+	letter-spacing: 0.45px;
+	margin-left: 22px;
+}
+
+.alarm_type {
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+	width: 65px;
+	opacity: 0.8;
+}
+
+.alarm_class {
+	text-align: center;
+	height: 14px;
+	font-size: 10px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+	width: 30px;
+}
+
+.alarm_tr {
+	width: 30px;
+	padding-right: 22px;
+	text-align: center;
+}
+
+.env_head {
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0.45px;
+	width: 120px;
+	height: 20px;
+}
+
+.env_real {
+	font-size: 12px;
+	color: #56E4FF;
+	letter-spacing: 0.39px;
+}
+
+.env_m {
+	opacity: 0.6;
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+}
+
+.video_place {
+	font-size: 14px;
+	color: #56E4FF;
+	letter-spacing: 0.47px;
+	width: 90px;
+	height: 20px;
+	margin-top: -38px;
+	margin-left: 65px;
+	position: absolute;
+	background: #1D2A4F;
+	border: 1px solid rgba(151, 255, 250, 0.18);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 20px;
+}
+
+.chexing_font1 {
+	opacity: 0.7;
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.47px;
+	text-align: center;
+	width: 115px;
+}
+
+.chexing_font2 {
+	text-align: center;
+	font-size: 32px;
+	color: #FFFFFF;
+	letter-spacing: 1.24px;
+	width: 115px;
+}
+
+.chexing_type {
+	font-size: 10px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+}
+
+}
+.chexing_licensePlate {
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0.62px;
+}
+
+.car_info {
+	width: 100px;
+	height: 48px;
+	margin-left: 13.3px;
+	float: left;
+}
+
+.car_plate {
+	background: #008FFF;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0.62px;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+}
+
+.car_type {
+	font-size: 10px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+	height: 14px;
+	text-align: center;
+	margin-top: 4px;
+	line-height: 14px;
+	float: left;
+}
+
+.visit_car {
+	background: #CC9B08;
+	width: 40px;
+}
+
+.fixed_car {
+	background: #0CBC98;
+	width: 40px;
+}
+
+.temp_car {
+	background: #FF4F4F;
+	width: 40px;
+}
+
+.car_time {
+	float: right;
+	font-size: 9px;
+	color: #FFFFFF;
+	line-height: 14px;
+	text-align: right;
+	margin-top: 4px;
+	height: 14px;
+	width: 60px;
+}
+
+.face_info {
+	width: 44px;
+	height: 44px;
+	margin-left: 10px;
+	float: left;
+}
+
+.face_img {
+	width: 44px;
+	height: 44px;
+}
+
+.face_stranger_img {
+	opacity: 0.64;
+	background: #161832;
+}
+
+.elevator_area {
+	width: 105px;
+	margin-left: 45px;
+	height: 214px;
+	float: left;
+}
+
+.elevator_name {
+	background: rgba(0, 196, 253, 0.48);
+	width: 90px;
+	height: 20px;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0.45px;
+	text-align: center;
+	margin-top: 15px;
+	line-height: 20px;
+}
+
+.elevator_img {
+	width: 90px;
+	height: 100px;
+	margin-top: 9px;
+}
+
+.elevator_descript {
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width: 100%;
+	height: 17px;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.scroll {
+	font-size: 10px;
+	color: #FFFFFF;
+	width: 208px;
+	height: 34px;
+	/* border-radius: 4px; */
+}
+
+.bar {
+	margin: 0px 5px;
+	width: 188px;
+	height: 4px;
+	background-color: #97FFFA;
+	position: relative;
+	cursor: pointer;
+	/* border-radius: 4px; */
+}
+
+.mask {
+	left: 50%;
+	right: 0px;
+	height: 4px;
+	background: #F37B7B;
+	display: inline;
+	position: absolute;
+	/* border-radius: 4px 0 0 4px; */
+}

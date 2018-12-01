@@ -1,0 +1,290 @@
+html {
+	font-family: STXihei;
+	/* 		overflow:-moz-scrollbars-horizontal;   */
+	overflow: -moz-scrollbars-vertical;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.boder {
+	border: 1px solid rgba(151, 255, 250, 0.40);
+	/* 		background: rgba(17, 57, 105, 0.2); */
+}
+
+.left_content {
+	width: 460px;
+	margin-left: 30px;
+	float: left;
+}
+
+.center_content {
+	width: 945px;
+	margin-left: 25px;
+	float: left;
+}
+
+.right_content {
+	width: 400px;
+	margin-left: 27px;
+	float: left;
+}
+
+.title_img {
+	width: 909px;
+	height: 114px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.system_title {
+	width: 600px;
+	height: 114px;
+	font-size: 50px;
+	color: #56E4FF;
+	letter-spacing: 10px;
+	line-height: 114px;
+	margin: auto;
+}
+
+.head {
+	height: 40px;
+	width: 100%;
+	/* 	background: rgba(17, 57, 105, 0.2); */
+	box-shadow: 0 1px 0 0 rgba(151, 255, 250, 0.2);
+}
+
+.head_font {
+	font-size: 20px;
+	color: #56E4FF;
+	letter-spacing: 0;
+	line-height: 40px;
+	margin-left: 15px;
+	float: left;
+}
+
+.fire_font{
+	font-size: 20px;
+	color: #56E4FF;
+	letter-spacing: 0;
+	line-height: 40px;
+}
+
+.fire_deal {
+	height: 20px;
+	width: 460px;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0.17px;
+	text-align: center;
+}
+
+.device_total {
+	text-align: center;
+	width: 942px;
+	height: 50px;
+	margin-top: 41px;
+	font-size: 36px;
+	color: #FFFFFF;
+	letter-spacing: -0.22px;
+}
+
+.device_num {
+	height: 97.1px;
+	padding-left: 174.4px;
+	margin-top: 5px;
+}
+
+.number {
+	width: 97.1px;
+	height: 97.1px;
+	background-image: linear-gradient(-180deg, rgba(3, 13, 42, 0.7) 0%,
+		rgba(35, 79, 170, 0.7) 100%);
+	margin-left: 18.6px;
+	float: left;
+	font-size: 100px;
+	color: #FFFFFF;
+	line-height: 97.14px;
+	text-align: center;
+}
+
+.item_title {
+	font-size: 24px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 24px;
+	text-align: center;
+	height: 24px;
+}
+
+.item_div {
+	height: 200px;
+	width: 200px;
+	margin-top: 26px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item_center {
+	width: 429px;
+	height: 202px;
+	margin-top: 26px;
+	background: rgba(5, 34, 121, 0.10);
+	border: 1px solid rgba(151, 255, 250, 0.20);
+	padding-top: 4px;
+	overflow: hidden;
+}
+
+.item_text {
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width: 366px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-left: 34px;
+	list-style-type:none;
+	margin-left:15px;
+}
+
+.leida_text {
+	font-family: PingFangSC-Regular;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0.22px;
+	width: 100%;
+	height: 33px;
+	text-align: center;
+	margin-top: 42px;
+}
+
+.red_num {
+	font-size: 24px;
+	color: #FF0204;
+	letter-spacing: 0.22px;
+	line-height: 25px;
+}
+
+.realtime_block {
+	width: 180px;
+	height: 117px;
+	margin-top: 25px;
+	margin-left: 15px;
+	float: left;
+}
+
+.realtime_text {
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: -0.08px;
+	height: 20px;
+	width: 100%;
+}
+
+.realtime_img {
+	width: 100%;
+	height: 73px;
+	margin-top: 7px;
+	background-image: linear-gradient(-180deg, rgba(4, 167, 254, 0.30) 57%,
+		rgba(4, 167, 254, 0.00) 100%);
+}
+
+.realtime_status {
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.14px;
+	width: 180px;
+	height: 17px;
+	text-align: center;
+	line-height: 17px;
+}
+
+.health_item {
+	height: 20px;
+	margin-top: 20px;
+	padding-left: 25px;
+	display: flex;
+}
+
+.health_item_name {
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 20px;
+	width: 50px;
+	float: left;
+}
+
+.health_value {
+	background-image:
+		url('/ib-web/static/img/feManageSystem/bar-1.png');
+	/* background-image: linear-gradient(90deg, #2B18BB 0%, #1E74BB 0%, #B1EA52 97%); */
+	border-radius: 10.61px;
+	height: 10px;
+	float: left;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 99;
+	position: absolute;
+	width: 100%;
+}
+.health_bar {
+	float: left;
+	position: relative;
+	height: 10px;
+	margin: auto 0;
+}
+.health_back {
+	opacity: 0.08;
+	background: #FFFFFF;
+	border-radius: 10.61px;
+	width: 260px;
+	height: 10px;
+	float: left;
+	z-index: -1;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.health_text {
+	opacity: 0.6;
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 20px;
+	float: left;
+	margin-left: 4px;
+	width: 12px;
+}
+/* 告警 */
+.health_alarm {
+	font-size: 12px;
+	color: rgba(255, 232, 0, 0.87);
+	margin-left: 40.3px;
+	line-height: 20px;
+}
+/* 危险 */
+.health_dangerous {
+	font-size: 12px;
+	color: rgba(255, 73, 73, 0.87);
+	margin-left: 40.3px;
+	line-height: 20px;
+}
+/* 良好 */
+.health_good {
+	font-size: 12px;
+	color: rgba(71, 208, 255, 0.87);
+	margin-left: 40.3px;
+	line-height: 20px;
+}
+/* 健康 */
+.health_healthy {
+	font-size: 12px;
+	color: rgba(0, 255, 169, 0.87);
+	margin-left: 40.3px;
+	line-height: 20px;
+}

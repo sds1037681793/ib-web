@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="46px" viewBox="0 0 60 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>4分屏绿</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4分屏绿" fill="#00BFA5" fill-rule="nonzero">
+            <g id="4分屏">
+                <g id="icon_4分屏">
+                    <polygon id="Shape" points="0 0 28.2857143 0 28.2857143 21.6991086 2.05197669e-15 21.6991086"></polygon>
+                    <polygon id="Shape" points="31.7142857 0 60 0 60 21.6991086 31.7142857 21.6991086 31.7142857 0"></polygon>
+                    <polygon id="Shape" points="0 24.3030016 28.2857143 24.3030016 28.2857143 46.0021102 2.05197669e-15 46.0021102"></polygon>
+                    <polygon id="Shape" points="31.7142857 24.3030016 60 24.3030016 60 46.0021102 31.7142857 46.0021102 31.7142857 24.3030016"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

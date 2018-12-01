@@ -1,0 +1,175 @@
+html {
+	font-family: SimHei;
+	/* 		overflow:-moz-scrollbars-horizontal;   */
+	overflow: -moz-scrollbars-vertical;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.system_title {
+	width: 360px;
+	top: 10px;
+	position: absolute;
+	left: 1530px;
+	z-index: 999;
+	border: 1px solid rgba(151, 255, 250, 0.4);
+	background: rgba(0, 7, 49, 0.6);
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 30px;
+	color: #56E4FF;
+	letter-spacing: 1.67px;
+}
+
+
+.boder {
+	border: 1px solid rgba(151, 255, 250, 0.4);
+	background: rgba(0, 7, 49, 0.6);
+}
+
+.head {
+	height: 46px;
+	width: 100%;
+	border-bottom: 1px solid rgba(151, 255, 250, 0.2);
+}
+
+.power_font {
+	font-family: PingFangSC-Regular;
+	position: absolute;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0.6px;
+}
+
+.head_font {
+	font-size: 20px;
+	color: #56E4FF;
+	letter-spacing: 0.67px;
+	line-height: 46px;
+	margin-left: 10px;
+	float: left;
+}
+
+.head_font_alarm {
+	font-size: 20px;
+	color: #56E4FF;
+	line-height: 46px;
+	margin-left: 10px;
+	float: left;
+}
+.head_font_spilt {
+    margin-left: 10px;
+    float: left;
+    border: 0.1px solid #56E4FF;
+    height: 30px;
+    width: 0.5px;
+    margin-top: 7px;
+	
+}
+.right_box {
+	height: 44px;
+	/* 	padding-left: 20px; */
+	width: 320px;
+	/* 	padding-right: 20px; */
+}
+
+.alarm_info {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.no_deal {
+	margin-top: 4px;
+	background: rgba(200, 35, 35, 0.3);
+	width: 311px;
+}
+
+.deal {
+	margin-top: 4px;
+}
+
+.alarm_box {
+	border-bottom: 1px solid rgba(86, 228, 255, 0.3);
+	width: 300px;
+	height: 51.7px;
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+.alarm_device_name {
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0.45px;
+	width: 190px;
+}
+
+.alarm_type {
+	font-size: 16px;
+	color: #FF5E72;
+	letter-spacing: 0.39px;
+	width: 190px;
+	padding-top: 8px; 
+}
+.systemName {
+	font-size: 14px;
+	color: #56E4FF;
+	letter-spacing: 0.39px;
+	width: 90px;
+	text-align: right;
+ 
+}
+.firstAlarmTime {
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+	width: 70px;
+ 	text-align: right;
+}
+.alarm_position {
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+	width: 140px;
+}
+
+.alarm_class {
+	text-align: right;
+	height: 14px;
+	font-size: 10px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+}
+
+}
+.alarm_tr {
+	width: 30px;
+	padding-right: 22px;
+	text-align: center;
+}
+
+.pdsUnit {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0.47px;
+}
+
+.pdsValue {
+	font-family: PingFangSC-Regular;
+	font-size: 30px;
+	color: #56E4FF;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+.alarm-active-line {
+	display: inline-block;
+	border-bottom: 2px solid #56E4FF;
+	height: 32px;
+	line-height: 30px;
+}
+

@@ -1,0 +1,86 @@
+div.tree-selecter div.box-borderd {
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 28px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+div.tree-selecter .treeContent {
+    display: none;
+    float: fixed;
+    position: absolute;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    min-width: 150px;
+    z-index: 999;
+    width:auto !important;
+    max-height:300px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+div.tree-selecter .input-group {
+    border-collapse: separate;
+}
+
+div.tree-selecter .ztree li a {
+	border: 0px;
+    margin-left: 2px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    vertical-align: sub;
+    text-decoration: none;
+    padding: 0px;
+}
+
+div.tree-selecter .ztree {
+    margin: 0;
+    color: #333;
+}
+div.tree-selecter .ztree li span {
+    margin-right: auto;
+}
+
+div.tree-selecter .clearBtn {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+
+div.tree-selecter .selecter {
+    width: 0px;
+}
+div.tree-selecter .input-group-btn {
+    position: relative;
+    white-space: nowrap;
+    display: table-cell;
+}
+
+
+div.tree-selecter .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+div.tree-selecter .input-group .form-control {
+    position: relative;
+    z-index: 0;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+div.tree-selecter .treeFieldName input::-ms-clear {
+	display: none;
+}

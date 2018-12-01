@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" stroke="#03EDFF">
+            <g id="yuanhuan" transform="translate(2.000000, 2.000000)">
+                <path d="M85,48 C85,27.5657084 68.4349442,11 47.9995796,11 C27.5658967,11 11,27.5657084 11,48 C11,68.4342916 27.5658967,85 47.9995796,85 C68.4349442,85 85,68.4342916 85,48 Z" id="Stroke-1" stroke-width="2"></path>
+                <path d="M96,47.999579 C96,21.4903378 74.5094737,0 48,0 C21.4913684,0 0,21.4903378 0,47.999579 C0,74.5088201 21.4913684,96 48,96 C74.5094737,96 96,74.5088201 96,47.999579 Z" id="Stroke-3" stroke-width="2"></path>
+                <path d="M79,48.5 C79,31.6544622 65.3431954,18 48.4995781,18 C31.6551171,18 18,31.6544622 18,48.5 C18,65.3455378 31.6551171,79 48.4995781,79 C65.3431954,79 79,65.3455378 79,48.5 Z" id="Stroke-5"></path>
+                <path d="M80.9973147,48.0873422 C80.7698125,30.139936 66.0360499,15.775169 48.0873216,16.0026653 C30.1394486,16.2310168 15.7751633,30.9643963 16.0026655,48.9126578 C16.231023,66.860064 30.9639303,81.224831 48.9135139,80.9973347 C66.8605316,80.7689832 81.2256722,66.0347485 80.9973147,48.0873422 Z" id="Stroke-7" stroke-width="14" stroke-dasharray="3,19"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,115 @@
+html {
+	font-size: 12px;
+	font-family: SimHei;
+	overflow: -moz-scrollbars-vertical;
+}
+
+.project-main-body {
+	line-height: 20px;
+	height: 1080px;
+	margin: 0px;
+	background: #162D39 !important;
+	width: 1920px;
+}
+
+.project-main-content {
+	background: #09232F none repeat scroll 0px 0px;
+	margin-left: 100px;
+	margin-right: 0px;
+	padding-bottom: 15px;
+	position: relative;
+	min-height: 100%;
+	outline: medium none;
+	min-height: 500px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.head {
+	width: 1680px;
+	height: 80px;
+	background: #162D39;
+}
+
+.menu_head {
+	width: 1321px;
+	height: 100%;
+	float: left;
+}
+
+.time_head {
+	width: 200px;
+	height: 100%;
+	position: relative;
+	float: left;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+.week {
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: right;
+	height: 80px;
+	float: right;
+	z-index: 1;
+	position: relative;
+}
+
+.menu_item {
+	width: 10rem;
+	height: 80px;
+	float: left;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.menu_item table {
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: -0.1px;
+	width: 100%;
+}
+
+.first_one {
+	height: 40px;
+	vertical-align: bottom;
+}
+
+.second {
+	height: 40px;
+}
+
+.three {
+	display: inline-block;
+	vertical-align: middle;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	background: #283B45;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+}
+
+.three a {
+	font-size: 14px;
+	height: 38px;
+	line-height: 38px;
+	letter-spacing: 0;
+}
+
+
+.accordion-sidebar>ul {
+	width: 100px !important;
+}
+
+.accordion-1-sidebar>ul {
+	width: 100px !important;
+}
+
+.submenu {
+	opacity: 0.8;
+}

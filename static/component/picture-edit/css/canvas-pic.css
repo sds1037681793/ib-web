@@ -1,0 +1,70 @@
+.canvas_dialog .container-top{
+    height:40px;
+}
+
+.canvas_dialog .container-top .ui-corner-all{
+	margin-left:5px;
+}
+
+.canvas_dialog .container-top button span{
+    height:26.4px;
+    width:25.6px;
+}
+
+.canvas_dialog .container-top button{
+    margin-left:5px;
+}
+
+.canvas_dialog .container-top button span img{
+    height:26.4px;
+    width:25.6px;
+}
+.canvas_dialog .container-left{
+    height:auto;
+    width:40px;
+    margin:0px;/*设置元素跟其他元素的距离为20像素*/
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    background:#E6E6E6;
+    border:#D4D4D4 1px;
+    
+}
+.canvas_dialog .container-left label{
+	margin-top: 0px; 
+}
+.canvas_dialog .container-main{
+    height:400px;
+    width:720px;
+    margin:0px;/*设置元素跟其他元素的距离为20像素*/
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+}
+.canvas_dialog * {
+	font-family: '微软雅黑';
+	font-size:12px;
+}
+
+.canvas_dialog canvas {
+	border: 2px dashed gray;
+}
+
+.canvas_dialog .container_pencil{
+	cursor: url(../images/PencilToolCursor.gif), pointer;
+}
+
+.canvas_dialog .container_eraser{
+	cursor: url(../images/test.png), pointer;
+}
+
+.canvas_dialog .container_font{
+	cursor:crosshair;
+}
+.canvas_dialog .speed {
+	top: 15px;
+}
+
+.canvas_dialog .ui-selectmenu-text {
+	font-size: 12px;
+}
+.container-top button{
+	height:26.4px;
+	width:25.6px;
+}

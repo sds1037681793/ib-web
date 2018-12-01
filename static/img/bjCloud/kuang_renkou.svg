@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="930px" height="258px" viewBox="0 0 930 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>kuang renkou</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M606.359439,0 L599.451848,4.64180161 L336.382107,4.64180161 L326.678364,0 L5.08219178,0 C3.37994426,3.12697796e-16 2,1.37994426 2,3.08219178 L2,252.917808 C2,254.620056 3.37994426,256 5.08219178,256 L926.917808,256 C928.620056,256 930,254.620056 930,252.917808 L930,3.08219178 C930,1.37994426 928.620056,-2.97723305e-15 926.917808,-2.66453526e-15 L606.359439,0 Z" id="path-1"></path>
+        <filter x="-0.2%" y="-0.7%" width="100.4%" height="101.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="1" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0844689938   0 0 0 0 0.178911208   0 0 0 0 0.313828656  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="滨江小区智慧云平台／设备重要报警" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-497.000000, -793.000000)">
+        <g id="Group-Copy-9" transform="translate(496.000000, 794.000000)">
+            <g id="kuang-renkou">
+                <g id="Fill-1">
+                    <use fill-opacity="0.8" fill="#07212D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#00BFA5" stroke-width="0.770547945" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-8" transform="translate(350.000000, 3.000000)">
+                    <polygon id="Fill-2" fill="#00BFA5" points="57.4383562 2.31289575 173.791096 2.31289575 173.791096 0 57.4383562 0"></polygon>
+                    <path d="M199.452055,1.63018447 L231.044521,1.63018447" id="Stroke-3" stroke="#00BFA5" stroke-width="0.770547945"></path>
+                    <path d="M0.184931507,1.63018447 L31.7773973,1.63018447" id="Stroke-4" stroke="#00BFA5" stroke-width="0.770547945"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

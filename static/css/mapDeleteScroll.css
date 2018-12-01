@@ -1,0 +1,14 @@
+html, body, #map {
+	height: 1080px;
+	padding: 0;
+	margin: 0;
+	z-index:10;
+}
+
+.hmap-control-zoom {
+    right: 30px;
+}
+
+.ol-overlaycontainer-stopevent {
+	display: none;
+}

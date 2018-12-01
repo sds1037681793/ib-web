@@ -1,0 +1,119 @@
+@CHARSET "UTF-8";
+.btnicons:focus {
+outline: 0 !important;
+}
+.btnexport:focus {
+outline: 0 !important;
+}
+.btnicons{
+color: #00BFA5; 
+border: 1px solid #00BFA5 !important;
+background-color: #fff !important;
+border-radius: 4px;
+width:60px; 
+height: 30px;
+}
+.btniconsedit{
+color: #00BFA5; 
+border: 1px solid #00BFA5 !important;
+background-color: #fff !important;
+border-radius: 4px;
+width:90px; 
+height: 30px;
+}
+.btniconsedit span{
+margin-left:19px;
+font-size: 14px;
+color: #00BFA5;
+letter-spacing:0; 
+line-height: 12px;
+}
+.btniconimg{
+background-image: url(../img/alarm/search.svg);
+width:16px;
+height:16px;
+margin-top: 5px;
+margin-left:-7px;
+line-height: 12px;
+}
+.btnicons span{
+margin-left:19px;
+font-size: 14px;
+color: #00BFA5;
+letter-spacing:0; 
+line-height: 12px;
+}
+.btniconimgadd{
+background-image: url(../img/alarm/add.svg);
+width:16px;
+height:16px;
+margin-top: 5px;
+margin-left:-7px;
+line-height: 12px;
+}
+.btniconimgheavyload{
+background-image: url(../img/alarm/heavyload.svg);
+width:16px;
+height:16px;
+margin-top: 5px;
+margin-left:-7px;
+line-height: 12px;
+}
+.btnexport{
+color: #00BFA5 !important;
+border: 1px solid #00BFA5 !important;
+background-color: #fff !important;
+border-radius: 4px;
+width:60px; 
+height: 30px;
+}
+.btniconimgedit{
+background-image: url(../img/alarm/edit.svg);
+width:16px;
+height:16px;
+margin-top: 5px;
+margin-left:-7px;
+line-height: 12px;
+}
+/* .btn-common:hover, .btn-common:focus{
+color: #00BFA5 !important;
+} */
+.btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover{
+color: #fff !important;
+border: 1px solid #fff !important;
+background-color: #fff !important;
+display:none;
+}
+.btniconimgedit{
+background-image: url(../img/menu/edit.svg);
+width:16px;
+height:16px;
+margin-top: 5px;
+margin-left:-7px;
+line-height: 12px;
+}
+.btniconimgdelete{
+background-image: url(../img/menu/delete.svg);
+width:16px;
+height:16px;
+margin-top: 5px;
+margin-left:-7px;
+line-height: 12px;
+}
+.btniconimgsave{
+background-image: url(../img/menu/save.svg);
+width:16px;
+height:16px;
+margin-top: 5px;
+margin-left:-7px;
+line-height: 12px;
+}
+.btniconimgexport{
+    background-image: url(../img/menu/export.svg);
+    width:16px;
+    height:16px;
+    margin-top: 5px;
+    margin-left:-7px;
+    line-height: 12px;
+}
+

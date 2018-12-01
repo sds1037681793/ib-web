@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="57px" viewBox="0 0 24 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>gao3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="34.6554191%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#51A4CE" offset="0%"></stop>
+            <stop stop-color="#43ABC4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="滨江小区智慧云平台／安全事件报警" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-974.000000, -935.000000)">
+        <g id="Group-21" transform="translate(496.000000, 794.000000)">
+            <g id="Group-27" transform="translate(28.000000, 70.000000)">
+                <g id="Group-26-Copy-2" transform="translate(413.000000, 26.000000)">
+                    <g id="gao3" transform="translate(37.000000, 45.000000)">
+                        <path d="M11.55,18 L11.7441176,18 C18.1230065,18 23.2941176,23.1711111 23.2941176,29.55 L23.2941176,56.6631579 L0,56.6631579 L0,29.55 C-7.81188583e-16,23.1711111 5.17111114,18 11.55,18 Z" id="Rectangle-8" fill="url(#linearGradient-1)"></path>
+                        <ellipse id="Oval-2" fill="#50A4CE" cx="12.1176471" cy="8.11052632" rx="8.11764706" ry="8.11052632"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

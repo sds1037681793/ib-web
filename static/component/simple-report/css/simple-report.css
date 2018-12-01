@@ -1,0 +1,21 @@
+tr.title-tr {
+	color: #000,
+	width: 100%
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+
+tr.data-tr {
+	color: #000,
+	width: 100%
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+
+tr.tr-odd-row-default {
+	background-color: #f0f0f0;
+}

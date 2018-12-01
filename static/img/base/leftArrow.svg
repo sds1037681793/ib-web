@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="30px" viewBox="0 0 17 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>zuo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="停车场车位停车纪录弹窗" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-578.000000, -782.000000)" opacity="0.5">
+        <path d="M572.345324,789.385571 L572.371528,789.359303 C572.83196,788.897744 573.584373,788.897744 574.044805,789.359303 L586.768454,802.11409 L599.503332,789.351798 C599.971251,788.882734 600.734895,788.882734 601.202813,789.351798 C601.670732,789.820862 601.670732,790.586374 601.202813,791.055438 L587.636911,804.654541 C587.636911,804.654541 587.633168,804.658293 587.633168,804.662046 L587.606964,804.688314 C587.146532,805.149872 586.394119,805.149872 585.933687,804.688314 L572.345324,791.066696 C571.884892,790.601384 571.884892,789.84713 572.345324,789.385571 Z" id="zuo" fill="#FAFBFB" fill-rule="nonzero" transform="translate(586.776876, 797.017241) rotate(90.000000) translate(-586.776876, -797.017241) "></path>
+    </g>
+</svg>

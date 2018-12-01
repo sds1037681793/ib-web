@@ -1,0 +1,56 @@
+div.radio span.checked {
+	background-position: -72px -279px;
+}
+
+div.radio span {
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+	height: 18px;
+	width: 18px;
+	background-position: 0px -279px;
+	display: inline-block;
+	text-align: center;
+}
+
+div.radio {
+	position: relative;
+	margin-right: 3px;
+}
+
+.radio {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	float: left;
+}
+
+div.checker span.checked {
+	background-position: -76px -260px;
+}
+
+div.checker span {
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+	height: 19px;
+	width: 19px;
+	background-position: 0px -260px;
+	display: inline-block;
+	text-align: center;
+}
+
+div.checker {
+	position: relative;
+	margin-right: 3px;
+}
+
+.checker {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	float: left;
+}
+
+label {
+	margin-bottom: 0px;
+	margin-top: 5px;
+}

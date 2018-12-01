@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>右下</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="视频监控九宫格" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1795.000000, -629.000000)">
+        <g id="Group" transform="translate(1695.000000, 529.000000)">
+            <g id="右下" transform="translate(100.000000, 100.000000)">
+                <rect id="Rectangle-15-Copy-6" fill="#00BFA5" x="0" y="0" width="40" height="40" rx="4"></rect>
+                <path d="M27.3931114,11.8442831 L9.12808845,8.02983118 C8.36589098,7.87046262 7.87046262,8.36589098 8.02983118,9.12808847 L11.8442831,27.3931114 C12.0036516,28.1553089 12.3154597,28.169167 12.5337253,27.4242922 L15.4820437,17.4256473 C15.7003094,16.6807725 16.4902231,15.8839297 17.2316334,15.658735 L27.4277568,12.5475835 C28.1726316,12.3223888 28.1553089,12.0036516 27.3931114,11.8442831 Z" id="Shape-Copy-6" fill="#FFFFFF" fill-rule="nonzero" transform="translate(17.987877, 17.986990) scale(-1, -1) translate(-17.987877, -17.986990) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

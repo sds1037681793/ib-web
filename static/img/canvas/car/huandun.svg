@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="25px" viewBox="0 0 14 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>huandun</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2.04978567" y="2.02615835" width="8.19914267" height="1.35077224"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-493.000000, -536.000000)">
+            <g id="Group-11" transform="translate(359.000000, 459.000000)">
+                <g id="Group-10">
+                    <g id="Group-15-Copy" transform="translate(117.677419, 32.960000)">
+                        <g id="Group-13" transform="translate(17.081547, 44.440117)">
+                            <g id="huandun">
+                                <rect id="Rectangle-16" fill="#FFDB71" x="0" y="0" width="12.298714" height="23.6385141"></rect>
+                                <g id="Rectangle-17">
+                                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <rect stroke="#979797" stroke-width="0.5" x="2.29978567" y="2.27615835" width="7.69914267" height="1"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

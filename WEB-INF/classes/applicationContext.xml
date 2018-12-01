@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd"
+	default-lazy-init="true">
+	<description>Spring公共配置 </description>
+	<aop:aspectj-autoproxy/>
+
+	<context:annotation-config/>
+	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+	<context:component-scan base-package="com.rib">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
+	</context:component-scan>
+	
+<!--  	 <task:scheduler id="cacheIndexTaskScheduler" pool-size="3"/>
+    <task:scheduled-tasks scheduler="cacheIndexTaskScheduler">
+        <task:scheduled ref="IMCCheckTimingTask" method="scan"  cron="0 0/1 * * * ?"  />
+    </task:scheduled-tasks> -->
+    
+ <!--   <task:scheduler id="comeInOutIndexTaskScheduler" pool-size="3"/>
+    <task:scheduled-tasks scheduler="comeInOutIndexTaskScheduler">
+        <task:scheduled ref="comeInOutSummaryIndexScan" method="scan" fixed-rate="3000"/>
+    </task:scheduled-tasks>
+	
+    <task:scheduler id="springScheduler" pool-size="3"/>
+    <task:scheduled-tasks scheduler="springScheduler">
+    	<task:scheduled ref="candoSendCacheScan" method="scan" fixed-rate="180000"/>
+    	<task:scheduled ref="greentownCustomerSynScan" method="scan" fixed-rate="60000"/>
+		<task:scheduled ref="bookingAuthorizationScan" method="scan" fixed-rate="3000"/>
+	    <task:scheduled ref="originalAccessRecScan" method="scan" fixed-rate="60000"/>
+        <task:scheduled ref="authorizeToGroupScan" method="scan" cron="0 10 0 * * ?"/>
+        <task:scheduled ref="orderTimeOutScan" method="scan" cron="30 0/60 * * * ?"/>
+        <task:scheduled ref="sendToAppScan" method="scan" cron="*/5 * * * * ?"/>      
+        <task:scheduled ref="uipErrorSendScan" method="scan" cron="*/5 * * * * ?"/>
+        <task:scheduled ref="autoClearComeInRecord" method="scan" cron="0 0 0 1/3 * ?"/>
+        <task:scheduled ref="emMountResetScan" method="scan"  cron="30 0 0 1 * ?"  />
+        <task:scheduled ref="emDiscountResValidScan" method="scan" cron="1 0 0 * * ?"/>
+        <task:scheduled ref="smsPreAlert" method="scan" cron="0 0 0 * * ?"/>
+        <task:scheduled ref="smsTimeReming" method="scan"  cron="0 0/1 * * * ?"/> 
+        <task:scheduled ref="smsTimePrep" method="scan"  cron="0 0/1 * * * ?"/>
+        <task:scheduled ref="emVehicleInOutDayFlowScan" method="scan" cron="0 20 0 * * ?" />
+        <task:scheduled ref="ordInfoScan" method="scan"  cron="0 */1 * * * ?"  />
+        <task:scheduled ref="doorPushScan" method="scan"  cron="0 0/4 * * * ?"  />
+        <task:scheduled ref="deviceAbnorPushScan" method="scan"  cron="0 0/5 * * * ?"  />
+        <task:scheduled ref="bookingAuthorizationScan" method="scan" cron="0 10 0 * * ?"/>
+        <task:scheduled ref="accessRecordImageRelScan" method="scan" cron="10 16 16 * * ?"/>
+        <task:scheduled ref="syncAmAttendanceRecordsScan" method="scan" cron="0 */2 * * * ?"/>线上以这个为主 每天的凌晨4点半 cron="0 30 4 * * ?" 
+        <task:scheduled ref="resetParkingMesScan" method="scan"  cron="0 0 0 * * ?"/>
+   		<task:scheduled ref="faceVisitorDeleteScan" method="scan" cron="0 0 1 * * ?" />清理业主访客和物业登记face++上的用户
+    </task:scheduled-tasks>
+    
+    <task:scheduler id="springScheduler" pool-size="1"/>
+    <task:scheduled-tasks scheduler="springScheduler">
+    	<task:scheduled ref="smsCheckTimingTask" method="scan" fixed-rate="10000"/>
+    </task:scheduled-tasks>
+   
+    
+    网关时间同步任务 cron="0 0 12 * * ?"
+    <task:scheduler id="gatewayScheduler" pool-size="3"/>
+    <task:scheduled-tasks scheduler="gatewayScheduler">
+        <task:scheduled ref="syncDbTime" method="scan" cron="0 0 0 * * ?"/>
+        <task:scheduled ref="sendToDisplay" method="scan" cron="0 0 1 * * ?"/>
+    </task:scheduled-tasks> -->
+   
+
+  
+    
+    
+	<!-- Jpa Entity Manager 配置 -->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"> 
+		<property name="dataSource" ref="sec"/>
+		<property name="persistenceUnitName" value="sec"/>
+		<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"/>
+		<property name="packagesToScan" value="com.rib"/>
+		<property name="jpaProperties">
+			<props>
+				<!-- 命名规则 My_NAME->MyName -->
+				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="hibernateJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="databasePlatform">
+			<bean factory-method="getDialect" class="org.springside.modules.persistence.Hibernates">
+				<constructor-arg ref="sec"/>
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- Jpa 事务配置 -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory"/>
+	</bean>
+	
+	<!-- Spring Data Jpa配置 -->
+ 	<jpa:repositories base-package="com.rib"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
+ 	
+ 	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+	
+	<!-- <bean id="entityManagerFactorySec" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"> 
+		<property name="dataSource" ref="sec"/>
+		<property name="persistenceUnitName" value="sec"/>
+		<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapterSec"/>
+		<property name="packagesToScan" value="com.rib.sec"/>
+		<property name="jpaProperties">
+			<props>
+				命名规则 My_NAME->MyName
+				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="entityManagerFactoryCm" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"> 
+		<property name="dataSource" ref="cm"/>
+		<property name="persistenceUnitName" value="cm"/>
+		<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapterCm"/>
+		<property name="packagesToScan" value="com.rib.cm"/>
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="hibernateJpaVendorAdapterSec" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="databasePlatform">
+			<bean factory-method="getDialect" class="org.springside.modules.persistence.Hibernates">
+				<constructor-arg ref="sec"/>
+			</bean>
+		</property>
+	</bean>
+	<bean id="hibernateJpaVendorAdapterCm" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="databasePlatform">
+			<bean factory-method="getDialect" class="org.springside.modules.persistence.Hibernates">
+				<constructor-arg ref="cm"/>
+			</bean>
+		</property>
+	</bean>
+	
+ 	<jpa:repositories base-package="com.rib.sec"  transaction-manager-ref="transactionManagerSec" entity-manager-factory-ref="entityManagerFactorySec"/>
+ 	<jpa:repositories base-package="com.rib.cm"  transaction-manager-ref="transactionManagerCm" entity-manager-factory-ref="entityManagerFactoryCm"/>
+
+	<bean id="transactionManagerSec" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactorySec"/>
+	</bean>
+	<bean id="transactionManagerCm" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactoryCm"/>
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManagerSec" proxy-target-class="true" />
+	<tx:annotation-driven transaction-manager="transactionManagerCm" proxy-target-class="true" /> -->
+
+	<!-- JSR303 Validator定义 -->
+ 	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+
+	<!-- <context:property-placeholder ignore-unresolvable="true" location="classpath*:/application.properties" /> -->
+
+	<bean class="com.rib.sec.common.EncryptPropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:/application.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 数据源配置, 使用Tomcat JDBC连接池 -->
+	<bean id="sec" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+		<!-- Connection Info -->
+		<property name="driverClassName" value="${sec.jdbc.driver}" />
+		<property name="url" value="${sec.jdbc.url}" />
+		<property name="username" value="${sec.jdbc.username}" />
+		<property name="password" value="${sec.jdbc.password}" />
+	
+		<!-- Connection Pooling Info -->
+		<property name="maxActive" value="${sec.jdbc.pool.maxActive}" />
+		<property name="maxIdle" value="${sec.jdbc.pool.maxIdle}" />
+		<property name="minIdle" value="0" />
+		<property name="defaultAutoCommit" value="false" />
+	</bean>
+
+	<!-- <bean id="cm" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+		Connection Info
+		<property name="driverClassName" value="${cm.jdbc.driver}" />
+		<property name="url" value="${cm.jdbc.url}" />
+		<property name="username" value="${cm.jdbc.username}" />
+		<property name="password" value="${cm.jdbc.password}" />
+	
+		Connection Pooling Info
+		<property name="maxActive" value="${cm.jdbc.pool.maxActive}" />
+		<property name="maxIdle" value="${cm.jdbc.pool.maxIdle}" />
+		<property name="minIdle" value="0" />
+		<property name="defaultAutoCommit" value="false" />
+	</bean> -->
+	
+	<!-- 数据源配置,使用应用服务器的数据库连接池 -->
+	<!-- <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/ExampleDB" /> -->
+
+
+    <!-- 支持上传文件 -->  
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"></property>   
+        <property name="maxUploadSize" value="10485760"></property>  
+        <property name="maxInMemorySize" value="40960"></property>  
+    </bean>
+</beans>

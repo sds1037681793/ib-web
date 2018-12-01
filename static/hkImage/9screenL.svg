@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="46px" viewBox="0 0 60 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>9分屏绿</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="9分屏绿" fill="#00BFA5" fill-rule="nonzero">
+            <g id="9分屏">
+                <g id="icon_4分屏-copy-3">
+                    <polygon id="Shape" points="0 0 18.3909937 0 18.3909937 13.9946942 1.33416784e-15 13.9946942"></polygon>
+                    <polygon id="Shape" points="20.8059726 0 39.1969663 0 39.1969663 13.9946942 20.8059726 13.9946942 20.8059726 0"></polygon>
+                    <polygon id="Shape-Copy-13" points="41.6119453 0 60.002939 0 60.002939 13.9946942 41.6119453 13.9946942 41.6119453 0"></polygon>
+                    <polygon id="Shape" points="0 16.0006004 18.3909937 16.0006004 18.3909937 29.9952946 1.33416784e-15 29.9952946"></polygon>
+                    <polygon id="Shape-Copy-15" points="0 32.0012008 18.3909937 32.0012008 18.3909937 45.995895 1.33416784e-15 45.995895"></polygon>
+                    <polygon id="Shape" points="20.8059726 16.0006004 39.1969663 16.0006004 39.1969663 29.9952946 20.8059726 29.9952946 20.8059726 16.0006004"></polygon>
+                    <polygon id="Shape-Copy-16" points="20.8059726 32.0012008 39.1969663 32.0012008 39.1969663 45.995895 20.8059726 45.995895 20.8059726 32.0012008"></polygon>
+                    <polygon id="Shape-Copy-14" points="41.6119453 16.0006004 60.002939 16.0006004 60.002939 29.9952946 41.6119453 29.9952946 41.6119453 16.0006004"></polygon>
+                    <polygon id="Shape-Copy-17" points="41.6119453 32.0012008 60.002939 32.0012008 60.002939 45.995895 41.6119453 45.995895 41.6119453 32.0012008"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

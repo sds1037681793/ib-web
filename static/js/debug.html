@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>COM调试页面</title>
+<script type="text/javascript" src="parkingDisplayUtil.js"></script>
+</head>
+<body>
+    <p/>
+    <p/>
+    <fieldset>
+        <legend>车位显示屏</legend>
+        <p/>
+        <table>
+            <tr>
+                <td>COM口:</td>
+                <td><input type="text" id="comName"/></td>
+                <td><button type="button" onclick="setting()">设置COM属性</button></td>
+            </tr>
+        </table>
+        <p/>
+        <table>
+            <tr>
+                <td><button type="button" onclick="init2();">初始化(COM)</button></td>
+                <td><button type="button" onclick="close2();">关闭(COM)</button></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>机号：</td>
+                <td></td>
+                <td><input type="text" id="machineNo"/></td>
+                <td></td>
+                <td><button id="btn-modify" type="button" onclick="readDeviceNoExt2();">读取机号(COM)</button></td>
+                <td></td>
+                <td><input type="text" id="newMachineNo"/></td>
+                <td></td>
+                <td><button id="btn-modify" type="button" onclick="setDeviceNoExt2();">设置机号(COM)</button></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td><button type="button" onclick="readTimeExt2();">读取时间(COM)</button></td>
+                <td></td>
+                <td><input type="text" id="dateId"/></td>
+                <td></td>
+                <td>(格式：2015-09-20 10:10:10)</td>
+                <td></td>
+                <td><button type="button" onclick="loadTimeExt2();">加载时间(COM)</button></td>
+                <td></td>
+                <td><button id="btn-modify" type="button" onclick="initDisplayExt2();">初始化显示屏(COM)</button></td>
+            </tr>
+            <tr>
+                <td>剩余车位数：</td>
+                <td></td>
+                <td><input type="text" id="remainCount"/></td>
+                <td></td>
+                <td><button type="button" onclick="loadRemainParkingSpaces2();">加载剩余车位数(COM)</button></td>
+                <td></td>
+                <td>
+                    <select id="displayStyleId">
+                        <option value="80">剩余车位XXXX个</option>
+                        <option value="40">总剩余车位XXXX个</option>
+                        <option value="20">本区剩余车位XXXX个</option>
+                        <option value="10">现时12：00   剩余车位XXXX个</option>
+                        <option value="08">现时12：00   总剩余车位XXXX个</option>
+                        <option value="04">现时12：00   本区剩余车位XXXX个</option>
+                        <option value="02">加载信息 + XXXX个</option>
+                        <option value="01">显示加载的公共信息</option>
+                    </select>
+                </td>
+                <td></td>
+                <td><button type="button" onclick="loadRemainParkingSpaceDisplayField2();">加载显示方式(COM)</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>移动速度：</td>
+                <td></td>
+                <td>
+                    <select id="moveSpeedId">
+                        <option value="0">0号</option>
+                        <option value="1">1号</option>
+                    </select>
+                </td>
+                <td></td>
+                <td><button type="button" onclick="loadDisplayMoveSpeed2();">设置移动速度(COM)</button></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" onclick="readSelectDisplayField2();">读取显示方式(COM)</button></td>
+            </tr>
+            
+             <tr>
+                <td>显示模式：</td>
+                <td></td>
+                <td>
+                    <select id="displayModeId">
+                        <option value="0">0号</option>
+                        <option value="1">1号</option>
+                    </select>
+                </td>
+                <td></td>
+                <td><button type="button" onclick="loadDisplayMode2();">设置显示模式(COM)</button></td>
+                <td></td>
+                <td><button type="button" onclick="displayHint2();">显示提示信息(COM)</button></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="content"/></td>
+                <td></td>
+                <td><button type="button" onclick="loadDisplayContent2();">设置显示内容(COM)</button></td>
+                <td></td>
+                <td><input type="text" id="otherContent"/></td>
+                <td></td>
+                <td><button type="button" onclick="loadOtherContent2();">设置其他显示内容(COM)</button></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="comeInParkingSapces"/></td>
+                <td></td>
+                <td><button type="button" onclick="displayComeInParkingSapces2();">设置入场剩余车位(COM)</button></td>
+                <td></td>
+                <td><input type="text" id="getOutParkingSapces"/></td>
+                <td></td>
+                <td><button type="button" onclick="displayGetOutParkingSapces2();">设置出场剩余车位(COM)</button></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        </table>
+    </fieldset>
+<object classid="clsid:D922ED30-F39A-4532-93E8-95491FB15658" id="MSComm" type="application/x-oleobject">
+</object> 
+</body>
+<script type="text/javascript">
+setComm("MSComm");
+function init2(){
+	var v = init();
+	if(v==0){
+		alert("初始化成功！");
+	}else{
+		alert("初始化失败！");
+	}
+}
+
+function close2(){
+    var v = close();
+    if(v==0){
+        alert("关闭成功！");
+    }else{
+        alert("关闭失败！");
+    }
+}
+
+function readDeviceNoExtCommon(){
+    var v = readDeviceNoExt();
+    if(v == -1){
+        alert("读取机号失败！");
+    }
+    return v;
+}
+
+function readDeviceNoExt2(){
+	var v = readDeviceNoExtCommon();
+	if(v != -1){
+		document.getElementById("machineNo").value = v;
+	}
+	return v;
+}
+
+
+function setDeviceNoExt2(){
+	var re = readDeviceNoExtCommon();
+	if(re == -1){
+		return;
+	}
+	var old = re;
+	var newM = document.getElementById("newMachineNo").value;
+	if(newM.length == 0 || isNaN(newM)){
+		alert("请输入设置机号数字！");
+		return;
+	}
+	var v = setDeviceNoExt(old,newM);
+    if(v==0){
+        alert("设置成功！");
+    }else{
+        alert("设置失败！");
+    }
+}
+
+function readTimeExt2(){
+	var v = readDeviceNoExtCommon();
+	if(v == -1){
+		return;
+	}
+	var time = readTimeExt(v);
+	alert(time);
+}
+function loadTimeExt2(){
+	var date = document.getElementById("dateId").value;
+	date = date + "|0";
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+	var re = loadTime(v,date);
+	alert(re);
+}
+function initDisplayExt2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var re = initDisplayExt(v);
+    alert(re);
+}
+
+function loadRemainParkingSpaces2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+	var count = document.getElementById("remainCount").value;
+	var re = loadRemainParkingSpaces(v,count);
+	alert(re);
+}
+function loadRemainParkingSpaceDisplayField2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var style = document.getElementById("displayStyleId").value;
+    var re = loadRemainParkingSpaceDisplayField(v,style);
+    alert(re);
+}
+function readSelectDisplayField2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var re = readSelectDisplayField(v);
+    if(re == "-128"){
+    	alert("剩余车位XXXX个");
+    }else if(re == "64"){
+        alert("总剩余车位XXXX个");
+    }
+    else if(re == "32"){
+        alert("本区剩余车位XXXX个");
+    }
+    else if(re == "16"){
+        alert("现时12：00   剩余车位XXXX个");
+    }
+    else if(re == "8"){
+        alert("现时12：00   总剩余车位XXXX个");
+    }
+    else if(re == "4"){
+        alert("现时12：00   本区剩余车位XXXX个");
+    }
+    else if(re == "2"){
+        alert("加载信息 + XXXX个");
+    }else if(re == "1"){
+        alert("显示加载的公共信息");
+    }else{
+	    alert(re);
+    }
+}
+function loadDisplayMoveSpeed2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var speed = document.getElementById("moveSpeedId").value;
+    var re = loadDisplayMoveSpeed(v,speed);
+    alert(re);
+}
+function loadDisplayMode2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var mode = document.getElementById("displayModeId").value;
+    var re = loadDisplayMode(v,mode);
+    alert(re);
+}
+function loadDisplayContent2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var content = document.getElementById("content").value;
+    var re = loadDisplayContent(v,content);
+    alert(re);
+}
+function loadOtherContent2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var content = document.getElementById("otherContent").value;
+    var re = loadOtherContent(v,content);
+    alert(re);
+}
+
+function displayComeInParkingSapces2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var comeInParkingSapces = document.getElementById("comeInParkingSapces").value;
+    var re = displayComeInParkingSapces(v,comeInParkingSapces);
+    alert(re);
+}
+
+function displayGetOutParkingSapces2(){
+    var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var getOutParkingSapces = document.getElementById("getOutParkingSapces").value;
+    var re = displayGetOutParkingSapces(v,getOutParkingSapces);
+    alert(re);
+}
+
+function displayHint2(){
+	var v = readDeviceNoExtCommon();
+    if(v == -1){
+        return;
+    }
+    var re = displayHint(v);
+    alert(re);
+}
+</script>
+</html>
