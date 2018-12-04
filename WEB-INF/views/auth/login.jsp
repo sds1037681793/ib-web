@@ -69,7 +69,7 @@
 .login-background {
 	margin: 0;
 	padding: 0;
-	background-image: url("${ctx}/static/img/login/newPage/background.png");
+	background-image: url("${ctx}/static/img/login/loginBg.png");
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -85,13 +85,14 @@
 }
 
 #login {
-	background-image: url("${ctx}/static/img/login/newPage/dengludikuang.png"); 
+	background-image: url("${ctx}/static/img/login/login-form-bg.png");
 	position: absolute;
-	width: 480px;
-	height: 540px;
+	width: 470px;
+	height: 503px;
 	z-index: 100;
-	left: 1270px !important;
-	top: 274px !important;
+	/*left: 1270px !important;*/
+	/*top: 274px !important;*/
+	background-size: contain;
 }
 
 
@@ -120,16 +121,16 @@
 	height: 40px;
 	margin: 0 auto;
 	border: 1px solid rgba(0,188,212,0.6);
-	border-radius: 4px;
+
 }
 
 .passWord {
 	width: 300px;
 	height: 40px;
 	margin: auto;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 	position: relative;
-	border-radius: 4px;
+
 	border: 1px solid rgba(0,188,212,0.6);
 }
 
@@ -140,7 +141,7 @@
 	height: 40px;
 	margin-left: auto;
 	margin-right:auto;
-	margin-top:50px;
+	margin-top:20px;
 }
 
 .div-content {
@@ -184,12 +185,18 @@
 	font-size: 14px;
 	color: #FFFFFF;
 	height: 100%;
-	width: 260px;
+	width: 245px;
 	border-radius: 4px;
 	border: none;
 	background-color: transparent;
 }
-
+.form-input:focus{
+	border: 0;
+	outline: none;
+}
+.form-input::-webkit-input-placeholder {
+	color: #94BFFF;
+	  }
 .icon {
 	height: 40px;
 	vertical-align: middle;
@@ -207,66 +214,72 @@
 margin-top:20px;
 
 }
-
+.alert{
+    padding: 0 10px;
+}
 </style>
 </head>
 
 <body class="login-background" onload="loadTopWindow()">
 	<div id="main" style="height: 100%; width: 100%;position: absolute;">
-		<div id="login">
-		<div style="margin-top:88px;margin-left:auto;margin-right:auto; width:174px;"><img  src="${ctx}/static/img/login/newPage/logo.svg" /></div>
-			<form id="loginForm" action="${ctx}/login" method="post"
-				style="margin-top: 10px; width: 100%;">
-				<%
-				    String error = (String) request.getAttribute(FormAuthenticationFilter.DEFAULT_ERROR_KEY_ATTRIBUTE_NAME);
-							if (error != null) {
-				%>
-				<div style="height: 40px;">
-					<div class="alert alert-error input-medium controls"
-						style="position: relative; z-index: 1; margin-left: 70px; width: 300px; line-height: 10px; color: #FFF; height: 100%; margin:0 auto;">
-						<button class="close" data-dismiss="alert"
-							style="line-height: 10px;">×</button>
-						登录失败，请重试.
+		    <div style="position: absolute;  top:40%; transform:translateY(-50%);left: 15%"><img  src="${ctx}/static/img/login/userLoginLogo.png" style="width: 130%" /></div>
+			<div id="login">
+				<div style="margin-top:88px;margin-left:auto;margin-right:auto; width:174px;"><%--<img  src="${ctx}/static/img/login/newPage/logo.svg" />--%></div>
+				<form id="loginForm" action="${ctx}/login" method="post"
+					style="margin-top: 10px; width: 100%;padding-top: 40px;">
+
+					<%
+						String error = (String) request.getAttribute(FormAuthenticationFilter.DEFAULT_ERROR_KEY_ATTRIBUTE_NAME);
+						if (error != null) {
+					%>
+					<div style="height: 26px;">
+						<div class="alert alert-error input-medium controls"
+							 style="position: relative; z-index: 1; margin-left: 70px; width: 300px; line-height: 10px; color: #FFF; height: 100%; margin:0 auto;">
+							<button class="close" data-dismiss="alert"
+									style="line-height: 10px;color:#fff;opacity: 1">×</button>
+							登录失败，请重试.
+						</div>
 					</div>
-				</div>
-				<%
-				    } else {
-				%>
-				<div style="height: 40px;"></div>
-				<%
-				    }
-				%>
-				<div class="loginName">
-					<span class="icon"><img alt=""
-						src="${ctx}/static/img/login/newPage/yonghu.svg"></span> <input
-						type="text" id="username" name="username" placeholder="请输入用户名"
-						value="${username}" class="form-input required" autofocus />
-				</div>
-				<div class="passWord">
-					<span class="icon"><img alt=""
-						src="${ctx}/static/img/login/newPage/mima.svg"></span> <input
-						type="password" id="password" name="password" placeholder="请输入密码"
-						class="form-input required" />
-				</div>
-				<div class="confirm">
-					<div style="">
-						 <input id="submit-btn"
-							class="btn btn-primary" type="button" value="登录"
-							onclick="javascript:login();" />
-							<label class="checkbox" for="rememberMe"><input
-							type="checkbox" id="rememberMe" name="rememberMe" checked="checked" 
-							style="display:none;" />
-							<img id="checkimg" src="${ctx}/static/img/login/newPage/jizhumimaxuanzhong.svg"  onclick="checkclick()"/>
-							<span
-							style="font-size: 12px; color: #FFFFFF;margin-left: 20px; opacity: 0.6">记住密码</span>
-						</label>
+					<%
+					} else {
+					%>
+					<div style="height: 26px;"></div>
+					<%
+						}
+					%>
+
+					<div class="loginName">
+						<span class="icon"><img alt=""
+							src="${ctx}/static/img/login/icon-header.png" style="width: 60%;margin-top: 2px;"></span> <span style="color:#1FDFF4;">|</span><input
+							type="text" id="username" autocomplete="off" name="username" placeholder="请输入用户名"
+							value="${username}" class="form-input required" autofocus />
 					</div>
 
-				</div>
+					<div class="passWord" style="margin-top: 20px;">
+						<span class="icon"><img alt=""
+							src="${ctx}/static/img/login/icon-password.png" style="width: 60%;margin-top: 2px;"></span> <span style="color:#1FDFF4;">|</span> <input
+							type="password" id="password" name="password" placeholder="请输入密码"
+							class="form-input required" />
+					</div>
+					<div class="confirm">
+						<div style="">
+							 <input id="submit-btn"
+								class="btn btn-primary" type="button" value="登录"
+								onclick="javascript:login();" />
+								<label class="checkbox" for="rememberMe"><input
+								type="checkbox" id="rememberMe" name="rememberMe" checked="checked"
+								style="display:none;" />
+								<img id="checkimg" src="${ctx}/static/img/login/newPage/jizhumimaxuanzhong.svg"  onclick="checkclick()"/>
+								<span
+								style="font-size: 12px; color: #FFFFFF;margin-left: 20px; opacity: 0.6">记住密码</span>
+							</label>
+						</div>
+
+					</div>
 
 
-			</form>
-		</div>
+				</form>
+			</div>
 	</div>
 	<div id="error-div"></div>
 
@@ -297,7 +310,7 @@ margin-top:20px;
 		
 		/* $.ajax({
 	        type: "post",
-	        url: "${ctx}/network/index?CHECK_AUTHENTICATION=false&locationUrl=" + locationUrl,
+	        url: "{ctx}/network/index?CHECK_AUTHENTICATION=false&locationUrl=" + locationUrl,
 	        dataType: "json",
 	        contentType: "application/json;charset=utf-8",
 	        success:function(data) {
@@ -332,9 +345,10 @@ margin-top:20px;
 	});
 
 	function resize() {
-		var top = (document.body.clientHeight - 240)/2.3;
+		/*var top = (document.body.clientHeight - 240)/2.3;*/
 		var left = (document.body.clientWidth - 350)/1.2;
-		$("#login").css("top", top + "px");
+		/*$("#login").css("top", top + "px");*/
+        $("#login").css("top",  "15%");
 		$("#login").css("left", left + "px");
 
 		$.each(shiftArrayX, function(n, shift) {

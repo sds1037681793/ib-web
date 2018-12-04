@@ -41,14 +41,14 @@
     <link href="${ctx}/static/component/jquery-icheck/1.0.2/css/all.css" type="text/css" rel="stylesheet" />
     <link href="${ctx}/static/styles/rib.css" type="text/css" rel="stylesheet" />
     <link href="${ctx}/static/component/accordion-menu/css/accordion-menu.css" type="text/css" rel="stylesheet" />
-    <link href="${ctx}/static/styles/accordion-1-menu.css" type="text/css" rel="stylesheet" />
+    <link href="${ctx}/static/styles/accordion-1-menu.css?1111111" type="text/css" rel="stylesheet" />
     <link href="${ctx}/static/component/dynamic-table-processor/css/dynamicTableProcessor.css" type="text/css" rel="stylesheet" />
     <link href="${ctx}/static/component/simple-report/css/simple-report.css" type="text/css" rel="stylesheet" />
     <link href="${ctx}/static/component/jquery.shutter/css/jquery.shutter.css" type="text/css" rel="stylesheet" />
    	<link href="${ctx}/static/component/dynamic-report-processor/css/photo.css" type="text/css" rel="stylesheet" />
     <link href="${ctx}/static/component/jquery-autocomplete/1.1.2/css/jquery.autocomplete.css" rel="stylesheet" />
 	<link href="${ctx}/static/component/tree-selecter/css/treeSelecter.css" rel="stylesheet" />
-	<link href="${ctx}/static/css/theme/hsMain.css" rel="stylesheet" />
+	<link href="${ctx}/static/css/theme/hsMain.css?1111111" rel="stylesheet" />
 <!-- 	电梯、消防视频弹窗 -->
 	<link href="${ctx}/static/css/cloudModleIframeBlue.css" type="text/css" rel="stylesheet" />
 	<link href="${ctx}/static/css/frame.css" type="text/css" rel="stylesheet" />
@@ -72,7 +72,7 @@
     <script src="${ctx}/static/component/jquery-datetimepicker/2.1.9/js/jquery.datetimepicker.js" type="text/javascript"></script>
     <script src="${ctx}/static/component/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js" type="text/javascript"></script>
     <script src="${ctx}/static/component/jquery-icheck/1.0.2/js/icheck.js" type="text/javascript"></script>
-    <script src="${ctx}/static/js/accordion-menu-1.js" type="text/javascript"></script>
+    <script src="${ctx}/static/js/accordion-menu-1.js?1111111" type="text/javascript"></script>
 	<script src="${ctx}/static/js/echarts/echarts.min.js" type="text/javascript"></script>
     <script src="${ctx}/static/component/jquery-uniform/2.1.2/js/jquery.uniform.js" type="text/javascript"></script>
     <script src="${ctx}/static/component/dynamic-table-processor/js/dynamicTableProcessor.js" type="text/javascript"></script>
@@ -101,184 +101,96 @@
 </head>
 
   <body class="project-main-body">
-    <div id="part1" style="position: relative; height: 81px; width: 240px; z-index: -9; outline: medium none !important;background: #162D39;box-shadow: 0 4px 12px 0 rgba(0,0,0,0.20);">
-      <div id="projectLogo" style="background-size:100%; background-position: center left; height: 80px; margin-left: 50px;background-repeat: no-repeat;width:144px;"></div>
-    </div>
-    <div id="part2" class="navbar user-nav" style="position: absolute; left: 238px; top: 0px; z-index: 20; margin: 0px; overflow: visible; outline: medium none">
-    <!-- 组织信息 隐藏 -->
-		<div style="display: none;">
-			<ul class="nav">
-				<li id="user-messages" class="dropdown"><a title="" href="#"
-					data-toggle="dropdown" data-target="#user-messages"
-					class="dropdown-toggle" style="background-color: #2E363F;"> <span
-						class="icon icon-user"></span> <span class="text">欢迎：<shiro:principal
-								property="name" /></span> <span id="operator-id" style="display: none"><shiro:principal
-								property="id" /></span> <span id="login-name" style="display: none"><shiro:principal
-								property="loginName" /></span> <b class="caret"></b>
-				</a>
-					<ul class="dropdown-menu">
-						<li><a id="a-change-password" href="#"><span
-								class="glyphicon glyphicon-pencil"
-								style="color: #555; font-size: 13px; margin-right: 6px;"></span>修改密码</a>
-						</li>
-						<li role="separator" class="divider"></li>
-						<li><a href="${ctx}/logout"><span
-								class="glyphicon glyphicon-log-out"
-								style="color: #555; font-size: 13px; margin-right: 6px;"></span>注销</a>
-						</li>
-					</ul></li>
-				<li id="org-messages" class="dropdown"><a id="a-login-org"
-					title="" href="#" data-toggle="dropdown"
-					data-target="#org-messages" class="dropdown-toggle"
-					style="background-color: #2E363F;"> <span
-						id="login-organize-id" style="display: none"><shiro:principal
-								property="organizeId" />^<shiro:principal
-								property="organizeType" /></span>登录组织： <span id="login-organize-name"><shiro:principal
-								property="organizeName" /></span><b class="caret"></b>
-				</a>
-					<div id="select-operator-org"></div></li>
-				<li id="search-menu" class="dropdown"><span
-					class="glyphicon glyphicon-search form-control-feedback"
-					style="color: #ccc; font-size: 16px;"></span> <input
-					id="menu-search-value" name="menu-search-value"
-					style="padding: 10px 30px 7px 10px; width: 250px; height: 37px; background-color: #555; border-width: 0px; color: #ccc"
-					placeholder="輸入菜单名查詢……" /></li>
-			</ul>
+    <div class="hearder" style="background-color:#191E33 ;height: 80px;">
+         <div id="part1" style="position: relative; height: 81px; width: 240px; z-index: 99; outline: medium none !important;background: #161d2e;">
+                 <div id="projectLogo" style="background-size:100%; background-position: center left; height: 80px; margin-left: 50px;background-repeat: no-repeat;width:144px;"></div>
+         </div>
+        <div id="part2" class="navbar user-nav" style="position: absolute; right: 40px; top: 0px; z-index: 20; margin: 0px; overflow: visible; outline: medium none">
+            <!-- 组织信息 隐藏 -->
+            <div style="display: none;">
+                <ul class="nav">
+                    <li id="user-messages" class="dropdown"><a title="" href="#"
+                                                               data-toggle="dropdown" data-target="#user-messages"
+                                                               class="dropdown-toggle" style="background-color: #2E363F;"> <span
+                            class="icon icon-user"></span> <span class="text">欢迎：<shiro:principal
+                            property="name" /></span> <span id="operator-id" style="display: none"><shiro:principal
+                            property="id" /></span> <span id="login-name" style="display: none"><shiro:principal
+                            property="loginName" /></span> <b class="caret"></b>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a id="a-change-password" href="#"><span
+                                    class="glyphicon glyphicon-pencil"
+                                    style="color: #555; font-size: 13px; margin-right: 6px;"></span>修改密码</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="${ctx}/logout"><span
+                                    class="glyphicon glyphicon-log-out"
+                                    style="color: #555; font-size: 13px; margin-right: 6px;"></span>注销</a>
+                            </li>
+                        </ul></li>
+                    <li id="org-messages" class="dropdown"><a id="a-login-org"
+                                                              title="" href="#" data-toggle="dropdown"
+                                                              data-target="#org-messages" class="dropdown-toggle"
+                                                              style="background-color: #2E363F;"> <span
+                            id="login-organize-id" style="display: none"><shiro:principal
+                            property="organizeId" />^<shiro:principal
+                            property="organizeType" /></span>登录组织： <span id="login-organize-name"><shiro:principal
+                            property="organizeName" /></span><b class="caret"></b>
+                    </a>
+                        <div id="select-operator-org"></div></li>
+                    <li id="search-menu" class="dropdown"><span
+                            class="glyphicon glyphicon-search form-control-feedback"
+                            style="color: #ccc; font-size: 16px;"></span> <input
+                            id="menu-search-value" name="menu-search-value"
+                            style="padding: 10px 30px 7px 10px; width: 250px; height: 37px; background-color: #555; border-width: 0px; color: #ccc"
+                            placeholder="輸入菜单名查詢……" /></li>
+                </ul>
+            </div>
+            <div class="head" style="font-size: 18px;">
+                <%--<div class="menu_head" id="project_menu_head" style="background-color: #191E33"></div>--%>
+                    <div style="line-height: 80px;float: right;color: #fff;margin: 0 10px">
+                        <a href="${ctx}/logout" class="btn btn-sm btn-azuse-1">退出</a>
+                    </div>
+                    <div style="line-height: 80px;float: right;color: #fff;margin: 0 10px">
+                        <span style="color: #8E9EBD">操作员：</span>XXX
+                    </div>
+                    <div style="line-height: 80px;float: right;color: #fff;margin: 0 10px">
+                        <span style="color: #8E9EBD">组织：</span>XXX
+                    </div>
+                    <div id="user_setting" style="float: right;  height: 100%;margin: 0 10px;position: relative">
+                        <div style="display: table-cell; vertical-align: middle;padding-left: 20px;  height: 80px;">
+                            <img id ="user_login" style="vertical-align: middle;cursor: pointer;" alt="" src="${ctx}/static/group/yonghu.png">
+                        </div>
+                        <ul id="ul_user_setting" style="background-color: #FFF;display:none;position: absolute;left: 0;top: 70px;width: 100px;line-height: 40px;">
+                            <li style="height: 50%;list-style-type:none;text-align: center;vertical-align: middle;">
+                                <a id="p-change-password" href="#" style="font-size: 14px;color: #6D6D6D;letter-spacing: 0;display:block;">修改密码</a>
+                            </li>
+                          <%--  <li style="height: 50%;list-style-type:none;text-align: center;vertical-align: middle;">
+                                <a href="${ctx}/logout" style="font-size: 14px;color: #6D6D6D;letter-spacing: 0;display:block;height: 100%;padding-top: 10px;">注销</a>
+                            </li>--%>
+                        </ul>
+                </div>
 
-		</div>
-      <div class="head">
-			<div class="menu_head" id="project_menu_head">
-<%-- 			<ul class="navbar-nav" >
-			<li class="dropdown" style ="display: none;">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #00BFA5;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/xiaofang.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">消防系统</td></tr>
-					</table>
-				</div>
-				</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">消费报警联动系统</a></li>
-					<li class="divider"></li>
-					<li><a href="#">消费水系统</a></li>
-				</ul>
-			</li>
-			</ul>
-			<ul class="navbar-nav" >
-			<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #00BFA5;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/dianti.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">电梯系统</td></tr>
-					</table>
-				</div>
-			</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">实时统计</a></li>
-					<li class="divider"></li>
-					<li><a href="#">统计分析</a></li>
-				</ul>
-			</li>
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #00BFA5;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/gongpeidian.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">供配电系统</td></tr>
-					</table>
-				</div>
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #4DA1FF;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/tingche.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">停车系统</td></tr>
-					</table>
-				</div>
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #4DA1FF;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/renxing.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">人行系统</td></tr>
-					</table>
-				</div>
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #4DA1FF;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/jiankong.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">视频监控</td></tr>
-					</table>
-				</div>
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #ED5E5E;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/kongtiao.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">暖通空调</td></tr>
-					</table>
-				</div>
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #ED5E5E;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/jishuipai.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">给水排系统</td></tr>
-					</table>
-				</div>
-				<div class="menu_item">
-					<div style="width: 100%; height: 0.5rem; background: #ED5E5E;"></div>
-					<table>
-						<tr class="first_one">
-							<td align="center"><img src="${ctx}/static/icon/index/zhaoming.svg" /></td>
-						</tr>
-						<tr class="second"><td  align="center">照明系统</td></tr>
-					</table>
-				</div>display:none;
-			</ul>
-	 --%>		</div>
-			<div class="time_head">
-				<div class="week">
-					<div style="height: 80px; vertical-align: middle; display: table-cell;">
-						<table style="height: 80%;"><tr><td id="weak"></td></tr><tr><td id="ymdhms"></td></tr></table></div>
-				</div>
-			</div>
-			<div id="user_setting" style="float: left; width: 10.83rem; height: 100%;">
-				<div style="display: table-cell; vertical-align: middle;padding-left: 20px; width: 130px; height: 80px;">
-					<img id ="user_login" style="vertical-align: middle;cursor: pointer;" alt="" src="${ctx}/static/group/yonghu.png">
-				</div>
-				<ul id="ul_user_setting" style="width:130px;height: 80%;background-color: #FFF;min-width: 10rem;padding: 0;display:none;">
-					<li style="height: 50%;list-style-type:none;text-align: center;vertical-align: middle;">
-						<a id="p-change-password" href="#" style="font-size: 14px;color: #6D6D6D;letter-spacing: 0;display:block;padding-top: 10px;height: 100%;">修改密码</a>
-					</li>
-					<li style="height: 50%;list-style-type:none;text-align: center;vertical-align: middle;">
-						<a href="${ctx}/logout" style="font-size: 14px;color: #6D6D6D;letter-spacing: 0;display:block;height: 100%;padding-top: 10px;">注销</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+
+
+
+                <%--<div class="time_head">
+                    <div class="week">
+                        <div style="height: 80px; vertical-align: middle; display: table-cell;">
+                            <table style="height: 80%;"><tr><td id="weak"></td></tr><tr><td id="ymdhms"></td></tr></table></div>
+                    </div>
+                </div>--%>
+
+            </div>
+        </div>
     </div>
-    <div id="div-menu-object" style="display: block; float: left; position: relative; width: 100px; z-index: 16; outline: medium none"></div>
-    <div id="content" class="project-main-content">
+
+    <div id="div-menu-object" style="display: block; float: left; position: relative;  z-index: 16; outline: medium none"></div>
+    <div id="content" class="project-main-content" style="width: auto !important;">
       <div id="content-header" style="width: 100%; margin-top: 0px; z-index: 20; outline: medium none;height:38px;">
         <div id="breadcrumb" class="nav-breadcrumb"></div> 
       </div>
-      <div id="container-fluid" style="padding-right: 20px; padding-left: 20px;">
+      <div id="container-fluid" style="padding-right: 20px; padding-left: 20px;background:url('${ctx}/static/img/new-img/container-fluid-bg.png') center center no-repeat  !important; background-size: cover !important;">
         <div id="content-page" class="clearfix" style="height: auto; width: 100%; padding-top: 15px;"></div>
       </div>
     </div>
@@ -448,9 +360,9 @@
             	createPage(data.id, data.name, data.icon, data.url);
             }
         }).AutoComplete('show');
-        setTimeout(startConn, 1000);
+        setTimeout(startConn, 1111);
 		//获取消防视频弹窗摄像头
-// 		setTimeout("getAllFireFightingCameras()",5000);
+// 		setTimeout("getAllFireFightingCameras()",1115);
     	
     });
     //点击用户图片弹出密码修改和注销下拉菜单
@@ -701,7 +613,7 @@
         } catch(e) {}
     	$("#content-header").show();
     	$("#breadcrumb").show();
-        $("#content").css("background","#EEE none repeat scroll 0px 0px");
+     /*   $("#content").css("background","#EEE none repeat scroll 0px 0px");*/
         $("#breadcrumb").css("background-color","#fff");
         $("#breadcrumb").css("border-bottom","1px solid #e3ebed");
         $("#container-fluid").css("padding-left","20px");
@@ -819,7 +731,7 @@
 		//今天的日期
 		$("#weak").html(week);
 		$("#ymdhms").html(ymd+hms);
-		setTimeout("showTime();", 1000);
+		setTimeout("showTime();", 1111);
 	}
     
 	function openPage(name, icon, url) {
@@ -828,7 +740,7 @@
 		}
 		$("#content-header").show();
     	$("#breadcrumb").show();
-        $("#content").css("background","#EEE none repeat scroll 0px 0px");
+    /*    $("#content").css("background","#EEE none repeat scroll 0px 0px");*/
         $("#breadcrumb").css("background-color","#fff");
         $("#breadcrumb").css("border-bottom","1px solid #e3ebed");
         $("#container-fluid").css("padding-left","20px");

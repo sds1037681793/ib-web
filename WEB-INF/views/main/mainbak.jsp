@@ -438,7 +438,7 @@
                     });
                 });
             });
-            $("#content").css("background","#EEE none repeat scroll 0px 0px");
+        /*    $("#content").css("background","#EEE none repeat scroll 0px 0px");*/
             $("#breadcrumb").css("background-color","#fff");
             $("#breadcrumb").css("border-bottom","1px solid #e3ebed");
             $("#container-fluid").css("padding-left","20px");

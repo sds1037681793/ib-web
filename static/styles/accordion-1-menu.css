@@ -44,9 +44,9 @@
 	margin: 0;
 	padding: 0;
 }
-.accordion-1-sidebar > ul li.open ul {
+/*.accordion-1-sidebar > ul li.open ul {
 	display: block;
-}
+}*/
 .accordion-1-sidebar > ul li ul li a {
 	padding: 10px 0 10px 25px;
 	display: block;
@@ -68,7 +68,6 @@
 }
 
 .accordion-1-sidebar > ul > li.active a{
-
 	 text-decoration:none;
 }
 

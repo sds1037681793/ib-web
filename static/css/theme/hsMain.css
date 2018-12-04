@@ -6,21 +6,20 @@ html {
 
 .project-main-body {
 	line-height: 20px;
-	height: 1080px;
+/*	height: 1080px;*/
 	margin: 0px;
-	background: #162D39 !important;
-	width: 1920px;
+	background-color: #181c27 !important;
+	width: 100%;
 }
 
 .project-main-content {
-	background: #09232F none repeat scroll 0px 0px;
-	margin-left: 100px;
+	margin-left: 250px;
 	margin-right: 0px;
 	padding-bottom: 15px;
 	position: relative;
-	min-height: 100%;
 	outline: medium none;
 	min-height: 500px;
+	width: auto !important;
 }
 
 ::-webkit-scrollbar {
@@ -28,9 +27,9 @@ html {
 }
 
 .head {
-	width: 1680px;
+	/*width: 1680px;*/
 	height: 80px;
-	background: #162D39;
+	background: #191E33;
 }
 
 .menu_head {
@@ -40,10 +39,9 @@ html {
 }
 
 .time_head {
-	width: 200px;
 	height: 100%;
 	position: relative;
-	float: left;
+	float: right;
 	font-size: 20px;
 	color: #FFFFFF;
 	letter-spacing: 0;
@@ -107,9 +105,111 @@ html {
 }
 
 .accordion-1-sidebar>ul {
-	width: 100px !important;
+	width: 240px !important;
+	background:url("../../img/new-img/nav-left-bg.png") center center no-repeat  !important;
+	background-size: cover;
+	margin-left: 6px;
 }
 
+
+
+/*
+btn 自定义样式*/
+.btn-azuse-1{
+	text-align: center;
+	color: #232838;
+	border-radius:8px;
+	background-color: #01FAFF;
+}
+.btn-azuse-1 :focus{
+	text-align: center;
+	color: #1b2238;
+	border-radius:8px;
+	background-color: #15f8ff;
+}
 .submenu {
-	opacity: 0.8;
+	cursor: pointer;
+}
+.submenu-top.active{
+	color: #ffffff;
+	z-index: 9999;
+	position: relative;
+}
+.submenu-top.active:before{
+	content:"";
+	width: 104%;
+	height: 62px;
+	border-left:6px solid #01FAFF;
+	position: absolute;
+	top: 0;
+	left: -6px;
+	background-color:#2E3242;
+
+	z-index: -999;
+}
+.submenu.open .children-submenu-ul{
+	display: block;
+}
+.submenu .icon-arrow-right{
+	width: 16px;
+	height: 16px;
+	background:url("../../img/new-img/icon-arrow-right.png") center center no-repeat  !important;
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 26px;
+	float: right;
+}
+.submenu.open>div>.icon-arrow-right{
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); 	/* IE 9 */
+	-moz-transform:rotate(90deg); 	/* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(90deg); 	/* Opera */
+}
+.children-submenu.open>div>.icon-arrow-right{
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); 	/* IE 9 */
+	-moz-transform:rotate(90deg); 	/* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(90deg); 	/* Opera */
+}
+.children-submenu{
+	cursor: pointer;
+}
+.children-submenu.active{
+	position: relative;
+	z-index: 9999;
+	color: #ffffff;
+}
+.children-submenu.open .three-parent{
+	display: block;
+}
+.children-submenu.active:before{
+	content:"";
+	width: 104%;
+	height: 62px;
+	border-left:6px solid #01FAFF;
+	position: absolute;
+	top: 1px;
+	left: -6px;
+	background-color:#2E3242;
+
+	z-index: -999;
+}
+.children-submenu-three.active{
+	position: relative;
+	z-index: 9999;
+	color: #ffffff;
+}
+.children-submenu-three.active:before{
+	content:"";
+	width: 104%;
+	height: 62px;
+	border-left:6px solid #01FAFF;
+	position: absolute;
+	top: 1px;
+	left: -6px;
+	background-color:#2E3242;
+
+	z-index: -999;
 }

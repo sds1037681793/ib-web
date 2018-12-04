@@ -22,6 +22,7 @@ html {
 	min-height: 100%;
 	outline: medium none;
 	min-height: 500px;
+	width: auto !important;
 }
 
 ::-webkit-scrollbar {

@@ -70,69 +70,89 @@
 					}else{
 						firstImgUrl='';
 					}
-					htmlLevel_left += '<li class="submenu"  id="accordion-item-' + value.id + '" >';
-					htmlLevel_left += '<div style="width: 100px;height: 80px;margin-top: 20px;color: rgb(255, 255, 255);cursor:pointer;">';
+					htmlLevel_left += '<li class="submenu submenu-top"  id="accordion-item-' + value.id + '"  data-url="'+value.url+'" >';
+					htmlLevel_left += '<div style="color: #8E9EBD;cursor:pointer;line-height: 40px;font-size: 16px;">';
 					if(firstImgUrl != ''){
-						htmlLevel_left += '<div style="text-align:center;padding-top:20px;"><img src="'+firstImgUrl+'" /></div>';
+						htmlLevel_left += '<div style="display: inline-block;margin-left: 20px"><img src="'+firstImgUrl+'" /></div>';
 					}else{
-						htmlLevel_left += '<div style="text-align:center;padding-top:20px;"><span class="icon glyphicon glyphicon-home" style="margin-right: 20px;"></span></div>';
+						htmlLevel_left += '<div style="display: inline-block;margin-left: 20px"><span class="icon glyphicon glyphicon-home" style="margin-right: 20px;"></span></div>';
 					}
-					htmlLevel_left += '<div style="text-align:center;padding-top: 7px;"><span style="vertical-align: middle;font-size: 14px;opacity: 0.8;">' + value.name + '</span></div>';
+					htmlLevel_left += '<div style="display: inline-block;margin: 10px;"><span style="vertical-align: middle;font-size: 14px">' + value.name + '</span></div>';
+
+                    if (value.childCount > 0) {//存在二级菜单
+
+                        htmlLevel_left += '<div class="icon-arrow-right"></div>';
+
+                        $.each(value.children, function(m, child) {//二级菜单
+                           /* var secondImgUrl = child.icon;
+                            if(typeof(secondImgUrl)!= 'undefined'&&secondImgUrl != '' && secondImgUrl.length>3){
+                                secondImgUrl = ctx+secondImgUrl.substring(3);
+                            }else{
+                                secondImgUrl='';
+                            }*/
+                            htmlLevel_left += '<ul class="children-submenu-ul">' +
+								'<li class="submenu children-submenu"  id="accordion-item-' + child.id + '"  data-url="'+child.url+'">' ;
+                            htmlLevel_left += '<div style="color: #8E9EBD;cursor:pointer;line-height: 40px;font-size: 16px;">';
+                            htmlLevel_left += '<div style="display: inline-block;margin:11px 0 11px 60px;"><span style="vertical-align: middle;font-size: 14px;">' + child.name + '</span></div>';
+
+
+                            if (child.childCount > 0) {//存在三级菜单
+                                htmlLevel_left += '<div class="icon-arrow-right"></div>';
+/*
+                                htmlLevel_top += '<ul class="navbar-nav" style="display:none" name="accordion-name-'+value.id+'">';
+                                htmlLevel_top += '<li class="dropdown" >';
+                                htmlLevel_top += '<a href="#" class="dropdown-toggle" data-toggle="dropdown">';
+                                htmlLevel_top += '<div class="menu_item">';
+                                //htmlLevel_top += '<div style="width: 100%; height: 0.5rem; background:'+backs[m%9]+';"></div>';
+                                htmlLevel_top += '<table><tr class="first_one"><td align="center">';
+                                if(secondImgUrl != ''){
+                                    htmlLevel_top += '<img src="'+secondImgUrl+'" />';
+                                }
+                                htmlLevel_top += '</td></tr><tr class="second"><td  align="center">'+child.name +'</td></tr>';
+                                htmlLevel_top += '</table></div></a>';
+                                htmlLevel_top += '<ul class="dropdown-menu" style="min-width: 10rem;padding:0;margin-left:-1px;margin-top:-1px;border-radius: 0;">';*/        htmlLevel_left += '<ul class="three-parent three-parent-ul' + child.id + '">'
+                                $.each(child.children, function(k, three) {//三级菜单
+                                    /*htmlLevel_top += '<li class="three" style="margin-bottom: -1.5px;" id="accordion-item-' + three.id +'"><a style="color: #DDDDDD; opacity: 0.8;font-size: 14px;line-height: 22px;text-align:center;padding:0;padding-top:9px;" href="#">'+three.name+'</a></li>';
+                                    urlItems[urlItems.length] = three;
+                                    if(typeof(three.code)!='undefined' && three.code!=''){
+                                        menuMap.put(three.code,three)
+                                    }*/
+
+                                    htmlLevel_left +=   '<li class="submenu children-submenu-three"  id="accordion-item-' + three.id + '" data-url="'+three.url+'" >' ;
+                                    htmlLevel_left += '<div style="color: #8E9EBD;cursor:pointer;line-height: 40px;font-size: 16px;">';
+                                    htmlLevel_left += '<div style="display: inline-block;margin:11px 0 11px 100px;"><span style="vertical-align: middle;font-size: 14px;">' + three.name + '</span></div></div></li>';
+
+                                });
+                                htmlLevel_left += '</ul>'
+                              /*  htmlLevel_top += '</ul></li></ul>';*/
+                            }/*else{
+                                htmlLevel_top += '<ul class="navbar-nav" style="display:none" name="accordion-name-'+value.id+'" >';
+                                htmlLevel_top += '<div class="menu_item" id="accordion-item-' + child.id + '">'
+                                //htmlLevel_top += '<div style="width: 100%; height: 0.5rem; background:'+backs[m%9]+';"></div>';
+                                htmlLevel_top += '<table><tr class="first_one"><td align="center">';
+                                if(secondImgUrl != ''){
+                                    htmlLevel_top += '<img src="'+secondImgUrl+'" />';
+                                }
+                                htmlLevel_top += '</td></tr><tr class="second"><td  align="center">'+child.name +'</td></tr>';
+                                htmlLevel_top += '</table></div></ul>';
+                                urlItems[urlItems.length] = child;
+                                if(typeof(child.code)!='undefined' && child.code!=''){
+                                    menuMap.put(child.code,child)
+                                }
+                            }*/
+                            htmlLevel_left +='</li></ul>';
+                        });
+                    } /*else {
+                        urlItems[urlItems.length] = value;
+                        if(typeof(value.code)!='undefined' && value.code!=''){
+                            menuMap.put(value.code,value)
+                        }
+                    }*/
+
 					htmlLevel_left += '</div>';
 					htmlLevel_left += '</li>';
-					if (value.childCount > 0) {//存在二级菜单
-						$.each(value.children, function(m, child) {//二级菜单
-							var secondImgUrl = child.icon;
-							if(typeof(secondImgUrl)!= 'undefined'&&secondImgUrl != '' && secondImgUrl.length>3){
-								secondImgUrl = ctx+secondImgUrl.substring(3);
-							}else{
-								secondImgUrl='';
-							}
 
-							if (child.childCount > 0) {//存在三级菜单
-								htmlLevel_top += '<ul class="navbar-nav" style="display:none" name="accordion-name-'+value.id+'">';
-								htmlLevel_top += '<li class="dropdown" >';
-								htmlLevel_top += '<a href="#" class="dropdown-toggle" data-toggle="dropdown">';
-								htmlLevel_top += '<div class="menu_item">';
-								//htmlLevel_top += '<div style="width: 100%; height: 0.5rem; background:'+backs[m%9]+';"></div>';
-								htmlLevel_top += '<table><tr class="first_one"><td align="center">';
-								if(secondImgUrl != ''){
-									htmlLevel_top += '<img src="'+secondImgUrl+'" />';
-								}
-								htmlLevel_top += '</td></tr><tr class="second"><td  align="center">'+child.name +'</td></tr>';
-								htmlLevel_top += '</table></div></a>';
-								htmlLevel_top += '<ul class="dropdown-menu" style="min-width: 10rem;padding:0;margin-left:-1px;margin-top:-1px;border-radius: 0;">';
-								$.each(child.children, function(k, three) {//三级菜单
-									htmlLevel_top += '<li class="three" style="margin-bottom: -1.5px;" id="accordion-item-' + three.id +'"><a style="color: #DDDDDD; opacity: 0.8;font-size: 14px;line-height: 22px;text-align:center;padding:0;padding-top:9px;" href="#">'+three.name+'</a></li>';
-									urlItems[urlItems.length] = three;
-									if(typeof(three.code)!='undefined' && three.code!=''){
-										menuMap.put(three.code,three)
-									}
 
-								});
-								htmlLevel_top += '</ul></li></ul>';
-							}else{
-								htmlLevel_top += '<ul class="navbar-nav" style="display:none" name="accordion-name-'+value.id+'" >';
-								htmlLevel_top += '<div class="menu_item" id="accordion-item-' + child.id + '">'
-								//htmlLevel_top += '<div style="width: 100%; height: 0.5rem; background:'+backs[m%9]+';"></div>';
-								htmlLevel_top += '<table><tr class="first_one"><td align="center">';
-								if(secondImgUrl != ''){
-									htmlLevel_top += '<img src="'+secondImgUrl+'" />';
-								}
-								htmlLevel_top += '</td></tr><tr class="second"><td  align="center">'+child.name +'</td></tr>';
-								htmlLevel_top += '</table></div></ul>';
-								urlItems[urlItems.length] = child;
-								if(typeof(child.code)!='undefined' && child.code!=''){
-									menuMap.put(child.code,child)
-								}
-							}
-						});
-					} else {
-						urlItems[urlItems.length] = value;
-						if(typeof(value.code)!='undefined' && value.code!=''){
-							menuMap.put(value.code,value)
-						}
-					}
 					firstItems[firstItems.length] = value;
 				});
 			}
@@ -143,7 +163,7 @@
 			var ulName = $("#project_menu_head ul").first().attr("name");
 			$("[name ="+ulName+"]").css('display','block');
 
-			$.each(firstItems, function(n, value){
+			/*$.each(firstItems, function(n, value){
 				$("#accordion-item-" + value.id).click(function(e) {
 					$(".menu_item").css("background",mainMenuColor[1]);
 					isChoosed = false;
@@ -161,7 +181,7 @@
 					        var organizeId = $("#login-org").data("orgId");
 					        var homeUrl = getHomepage(organizeId);
 							$("#content-page").load(getAppName() + homeUrl);
-				            $("#content").css("background",contentBgColor[1]);
+				          /!*  $("#content").css("background",contentBgColor[1]);*!/
 				            $("#content-header").hide();
 				            $("#breadcrumb").hide();
 				            $("#container-fluid").css("padding-left","0px");
@@ -237,16 +257,42 @@
 					chooseItem.css("background",green);
 					chooseItem.css("opacity","1");
 				}
-			});
+			});*/
 
-			$(".submenu").click(function() {
-				$(".submenu").css("background","rgba(38,45,54,0)");
-				$(".submenu").css("opacity","0.8");
-				$(this).css("background","rgba(255,255,255,0.1)");
-				$(this).css("opacity","1");
+			$(".submenu-top").click(function(e) {
+				e.stopPropagation();
+                if($(this).hasClass("open")){
+                    $(this).removeClass("open");
+                }else{
+                    $(".submenu-top").removeClass("active").removeClass("open");
+                    $(this).addClass("open");
+                    if(!$(this).find(".children-submenu").length){
+                        $(this).addClass("active");
+                        opts.goPage("", "", "",  $(this).data("url"));
+                    }
+                }
 			});
+			$(".children-submenu").click(function(e) {
+                e.stopPropagation();
+              if($(this).hasClass("open")){
+                  $(this).removeClass("active").removeClass("open");
+			  }else{
+                  $(".children-submenu").removeClass("active").removeClass("open");
+                  $(this).addClass("open");
+                  if(!$(this).find(".children-submenu-three").length){
+                      $(this).addClass("active");
+                      opts.goPage("", "", "",  $(this).data("url"));
+                  }
+			  }
+            });
+			$(".children-submenu-three").click(function(e) {
+                e.stopPropagation();
+                $(".children-submenu-three").removeClass("active");
+                $(this).addClass("active");
+                opts.goPage("", "", "",  $(this).data("url"));
+            });
 			// 设置事件监听
-			$.each(urlItems, function(n, value) {
+			/*$.each(urlItems, function(n, value) {
 				$("#accordion-item-" + value.id).click(function(e) {
 					e.preventDefault();
 					//$(".accordion-sidebar .active").removeClass("active");
@@ -266,10 +312,10 @@
 						chooseItem.css("opacity","1");
 					}
 				});
-			});
+			});*/
 
-			$(".submenu:first").css("background","rgba(255,255,255,0.1)");
-			$(".submenu:first").css("opacity","1");
+
+			/*$(".submenu-top:first").addClass("open");*/
 		});
 	}
 })(jQuery);
